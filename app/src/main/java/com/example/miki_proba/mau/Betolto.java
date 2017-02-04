@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 public class Betolto extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 4000;
+    private static int SPLASH_TIME_OUT = 4000;  //A betöltési időt itt lehet beállítani.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

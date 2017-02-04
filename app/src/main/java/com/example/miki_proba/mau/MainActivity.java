@@ -2,22 +2,18 @@ package com.example.miki_proba.mau;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Handler;
-import android.preference.PreferenceManager;
-import android.support.annotation.MainThread;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
 
-    private boolean exit = false;
-    private TextView textView;
+    private boolean exit = false;   //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
+    private TextView textView;      //A történetnek a textview-a.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder alert1 = new AlertDialog.Builder(MainActivity.this, R.style.AppCompatAlertDialogStyle);
+                AlertDialog.Builder alert1 = new AlertDialog.Builder(MainActivity.this, R.style.AppCompatAlertDialogStyle);//Ez itt a történet.
                 alert1.setMessage("One day Europe was kidnapped by a terrible "+
                         "group of evil forces.\n"+
                         "She asked 8 friends to help her.\n"+
@@ -56,11 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("LOG_first","Create");
     }
-
-    public void story(View view){
-
-    }
-
+    //ha kétszer rá kattintunk a vissza gombra akkor ne a másik activityre menjen át hanem kilép.
     @Override
     public void onBackPressed() {
         if (exit) {

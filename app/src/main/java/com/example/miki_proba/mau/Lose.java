@@ -12,8 +12,8 @@ import android.widget.Toast;
 
 public class Lose extends AppCompatActivity {
 
-    private Boolean exit = false;
-    private ImageView imageView;
+    private Boolean exit = false;   //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
+    private ImageView imageView;    //A vissza gomb amivel vissza lehet menni a főmenübe.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

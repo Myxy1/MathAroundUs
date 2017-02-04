@@ -9,10 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -20,11 +17,10 @@ import android.widget.Toast;
 public class SecondActivity extends AppCompatActivity {
 
 
-    private EditText name1;
-    private Button button1;
-    private Boolean exit = false;
-    private MediaPlayer mp1,mp2;
-    private String name;
+    private EditText name1;     //A játékos neve
+    private Button button1;     //Tovább gomb
+    private Boolean exit = false;   //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
+    private MediaPlayer mp1,mp2;    //Két hang fájl, egyik azt csinálja hogyha nem add meg nevet akkor sípól, ha meg sikerült és beír valamit akkor utána át teszi a következő activityre és kiadja a hangot.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +32,7 @@ public class SecondActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Ellenőrzi, hogy a név mezőben van e valami.
                 if (name1.getText().length() == 0){
                     Toast.makeText(SecondActivity.this, "Please write your name", Toast.LENGTH_SHORT).show();
                     mp1.setLooping(false);
@@ -66,7 +63,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
 
-
+    //ha kétszer rá kattintunk a vissza gombra akkor ne a másik activityre menjen át hanem kilép.
     @Override
     public void onBackPressed() {
         if (exit) {

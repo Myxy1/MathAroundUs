@@ -20,12 +20,12 @@ import android.widget.Toast;
 public class ThirdActivity extends AppCompatActivity {
 
     private static final String TAG = "ThirdActivity";
-    private TextView name2;
-    private String name;
-    private ImageView img;
-    private Boolean exit = false;
-    private View button_options;
-    private Button button1, button4;
+    private TextView name2;     //A játékos nevének a mező.
+    private String name;        //A játékos neve.
+    private ImageView img;      //a facebook logo kép.
+    private Boolean exit = false;   //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
+    private View button_options;    //Beállítások opció gomb.
+    private Button button1, button4;    //A játék indítása gomb és a készítők gomb.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,8 +84,7 @@ public class ThirdActivity extends AppCompatActivity {
 
 
 
-
-
+    //ha kétszer rá kattintunk a vissza gombra akkor ne a másik activityre menjen át hanem kilép.
     @Override
     public void onBackPressed() {
         if (exit) {
