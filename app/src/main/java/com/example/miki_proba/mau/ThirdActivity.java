@@ -3,40 +3,28 @@ package com.example.miki_proba.mau;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Configuration;
-import android.content.res.Resources;
-import android.graphics.BitmapFactory;
-import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.text.method.LinkMovementMethod;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
-import java.util.Locale;
 
 public class ThirdActivity extends AppCompatActivity {
 
     private static final String TAG = "ThirdActivity";
     private TextView name2;
     private String name;
-    private String languages;
+    private ImageView img;
     private Boolean exit = false;
     private View button_options;
-    private Locale myLocale;
     private Button button1, button4;
 
     @Override
@@ -49,9 +37,6 @@ public class ThirdActivity extends AppCompatActivity {
         name2 = (TextView) findViewById(R.id.name2);
         name2.setText(name);
 
-
-
-        languages = sharedPreferences.getString("languages","");
 
 
         button1 = (Button) findViewById(R.id.button1);
@@ -85,32 +70,25 @@ public class ThirdActivity extends AppCompatActivity {
             }
         });
 
+        img = (ImageView)findViewById(R.id.fb);
+        img.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Uri uri = Uri.parse("http://www.facebook.com/MathAroundUs");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
 
-        //setLocale(languages);
         Log.d("LOG_third","Create");
     }
 
-    public void setLocale(String lang) {
-
-        myLocale = new Locale(lang);
-        Resources res = getResources();
-        DisplayMetrics dm = res.getDisplayMetrics();
-        Configuration conf = res.getConfiguration();
-        conf.locale = myLocale;
-        res.updateConfiguration(conf, dm);
-        /*Intent refresh = new Intent(this, ThirdActivity.class);
-        startActivity(refresh);
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-        */
-    }
 
 
 
 
-        @Override
+    @Override
     public void onBackPressed() {
         if (exit) {
-
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_HOME);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

@@ -216,9 +216,10 @@
 
 
     <string name="developers">
-        \nDevelopers:\n
+        \nMobile developer:\n
                 Merényi Miklós\n
-                Puskás Dávid"
+        \nWebsite developer:\n
+                Puskás Dávid
     </string>
 
 
@@ -227,9 +228,13 @@
             Miguel Rodrigues\n
     </string>
 
+    <string name="idea">
+        \nOriginal idea:\n
+            Andreea Suciu\n
+    </string>
 
     <string name="school">
-        \nSchools:\n
+        \nThe App questions are a joint work of the teachers and students of the following Partner Schools:\n
     </string>
 
 

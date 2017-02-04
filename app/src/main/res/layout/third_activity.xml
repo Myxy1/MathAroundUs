@@ -35,36 +35,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="bottom"
-        android:layout_alignParentBottom="true"
 
-        android:layout_marginBottom="50dp"
-        android:layout_centerVertical="false"
-        android:layout_centerHorizontal="true">
+        android:layout_marginBottom="125dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
 
         <Button
             android:text="@string/newgame"
             android:textColor="#f8f7f7"
-            android:textSize="25dp"
+            android:textSize="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button1"
             android:background="@drawable/mybutton"
             />
-
-
-        <Button
-            android:text="@string/continuee"
-            android:textColor="#f8f7f7"
-            android:layout_width="match_parent"
-            android:textSize="25dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2"
-            android:background="@drawable/mybutton"
-            android:layout_marginTop="21dp"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            />
-
 
         <Button
             android:text="@string/options"
@@ -72,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button_option"
-            android:textSize="25dp"
+            android:textSize="30dp"
             android:layout_marginTop="21dp"
             android:background="@drawable/mybutton"
 
@@ -82,7 +67,7 @@
             android:text="@string/credits"
             android:textColor="#f8f7f7"
             android:layout_width="match_parent"
-            android:textSize="25dp"
+            android:textSize="30dp"
             android:layout_height="wrap_content"
             android:id="@+id/button4"
             android:background="@drawable/mybutton"
@@ -92,4 +77,17 @@
 
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fb"
+        android:id="@+id/fb"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/welcome"
+        android:layout_alignStart="@+id/welcome"
+        android:clickable="true"
+        />
+
 </RelativeLayout>
