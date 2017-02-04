@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MAU</string>
+    <string name="newgame">Nieuw Spel</string>
+    <string name="continuee">Voortzetten</string>
+    <string name="credits">Kredits</string>
+    <string name="options">Opties</string>
+</resources>

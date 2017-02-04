@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="newgame">Új Játék</string>
+    <string name="continuee">Játék folytatás</string>
+    <string name="credits">Készítők</string>
+    <string name="options">Beállítások</string>
+</resources>

@@ -1,0 +1,250 @@
+<resources>
+    <string name="app_name">MAU</string>
+
+    <string-array name="questions" formatted="false">//kérdések
+        <item>Knowing that in Italy the fixed telephone numbers have 10 digits whose the first is 0, how many numbers can we have?</item>
+        <item>The distance between two numbers in the Fibonacci sequence is 2 places. What is the quotient of the two numbers?</item>
+        <item>The perimeter proportion of two homothetic polygons equals 5. How many times is the area of the first polygon greater than the area of the second polygon?</item>
+        <item>If the first three Fibonacci numbers are given as 1, 1, 2 then what is the eleventh number?</item>
+        <item>It is known that 21% of the amount of milk is cream and 25% of the amount of cream is butter. Find out the amount of milk we need to obtain 52,5 kg butter?</item>
+        <item>The following sequence is given:  1, 1, 2, 3, 5, 8, 13, 21. Determine the next 3 numbers in the sequence.</item>
+        <item>Which of the following sequences is a Fibonacci sequence?</item>
+        <item>How many solutions are there for a quadratic equation is the discriminant is negative?</item>
+        <item>Electrical power is measured in:</item>
+        <item>The frequency is measured in?</item>
+        <item>How long does it take for the Earth to orbit around itself?</item>
+        <item>What does RGB designate?</item>
+        <item>What is biggest?</item>
+        <item>The irrational magnitudes were discovered by</item>
+        <item>Archaeologists determined that in order to build the pyramids of Egypt, the pyramid builders needed an understanding of </item>
+        <item>How many bits has one byte?</item>
+        <item>What is the Golden Triangle?</item>
+        <item>What is the formula of Golden Ratio?</item>
+        <item>What kind of limit of Global Warming did the countries decided to set  during the 2015 CCC in Paris?</item>
+        <item>How muh does the apache web server cost?</item>
+        <item>Which of the following foods needs the gratest amount of water per kilo:</item>
+        <item>Which is the 14th number of the Fibonacci sequence?</item>
+        <item>You know that the monthly growth of an idealized rabbit population follows the Fibonacci sequence (1, 1, 2, 3, 5, etc.). If you buy 8 rabbits, how many will they be after 8 months?</item>
+        <item>In which number system are colors coded in a computer?</item>
+        <item>Which colors does the RGB system use?</item>
+    </string-array>
+
+
+    <string-array name="opt" formatted="false">//lehetőségek
+
+        <item>10,000</item>
+        <item>1,000,000,000</item>
+        <item>999,999,999</item>
+        <item>100,000</item>
+
+        <item>2,618</item>
+        <item>1,618</item>
+        <item>0,618</item>
+        <item>3,618</item>
+
+        <item>25</item>
+        <item>5</item>
+        <item>10</item>
+        <item>2,5</item>
+
+        <item>55</item>
+        <item>77</item>
+        <item>88</item>
+        <item>89</item>
+
+        <item>1000 kg</item>
+        <item>2000 kg</item>
+        <item>1500 kg</item>
+        <item>500 kg</item>
+
+        <item>29, 34, 88</item>
+        <item>34, 55, 89</item>
+        <item>13, 8, 5</item>
+        <item>1, 1, 2</item>
+
+        <item>1, 1, 2, 3, 5, 8, 13, 21</item>
+        <item>2, 2, 4, 6, 8, 10, 16, 26</item>
+        <item>3, 5, 7, 9,  11, 13, 15</item>
+        <item>13, 17, 19, 23, 29, 31</item>
+
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+        <item>Watt</item>
+        <item>kW</item>
+        <item>kWh</item>
+        <item>Volt</item>
+
+        <item>Hertz (Hz)</item>
+        <item>J</item>
+        <item>m/s</item>
+        <item>Kelvin</item>
+
+        <item>12 hours</item>
+        <item>1 month</item>
+        <item>24 hours</item>
+        <item>1 year</item>
+
+        <item>Wireless communication protocol</item>
+        <item>The computer screen</item>
+        <item>The screen resolution</item>
+        <item>Colours</item>
+
+        <item>a 2 Byte number</item>
+        <item>a 12 bit number</item>
+        <item>10 (in decimal notation)</item>
+        <item>F (in hexidecimal notation)</item>
+
+        <item>Babylonians</item>
+        <item>Indians</item>
+        <item>Egyptians</item>
+        <item>Pythagoreans</item>
+
+        <item>Acceleration</item>
+        <item>slope</item>
+        <item>the Theory of relativity</item>
+        <item>complex numbers</item>
+
+        <item>10</item>
+        <item>1024</item>
+        <item>8</item>
+        <item>2</item>
+
+        <item>72° and 36°</item>
+        <item>70 ° and 72°</item>
+        <item>72° and 72°</item>
+        <item>36° and 71°</item>
+
+        <item>(a+b)/a</item>
+        <item>(a+b)</item>
+        <item>(a+b)/a+a</item>
+        <item>(a+b)/a = a/b</item>
+
+        <item>smaller than 2°C</item>
+        <item>1.5°C</item>
+        <item>bigger than 2°C</item>
+        <item>3°C</item>
+
+        <item>50$</item>
+        <item>100$</item>
+        <item>Free</item>
+        <item>300$</item>
+
+        <item>cheese</item>
+        <item>poultry meat</item>
+        <item>pork meat</item>
+        <item>potato</item>
+
+        <item>15</item>
+        <item>377</item>
+        <item>610</item>
+        <item>233</item>
+
+        <item>9</item>
+        <item>63</item>
+        <item>2584</item>
+        <item>987</item>
+
+        <item>hexadecimal </item>
+        <item>decimal</item>
+        <item>numeral</item>
+        <item>3-base</item>
+
+        <item>red,green,brown</item>
+        <item>red,gray,blue</item>
+        <item>green,red,blue</item>
+        <item>blue,red,yellow</item>
+    </string-array>
+
+
+    <string-array name="ans" formatted="false">//jó válaszok
+        <item>1,000,000,000</item>
+        <item>2,618</item>
+        <item>25</item>
+        <item>89</item>
+        <item>1000</item>
+        <item>34, 55, 89</item>
+        <item>1, 1, 2, 3, 5, 8, 13, 21</item>
+        <item>0</item>
+        <item>kWh</item>
+        <item>Hertz (Hz)</item>
+        <item>24 hours</item>
+        <item>The screen resolution</item>
+        <item>a 2 Byte number</item>
+        <item>Pythagoreans</item>
+        <item>slope</item>
+        <item>8</item>
+        <item>72°and 36°</item>
+        <item>(a+b)/a = a/b</item>
+        <item>smaller than 2°C</item>
+        <item>Free</item>
+        <item>pork meat</item>
+        <item>377</item>
+        <item>987</item>
+        <item>hexadecimal</item>
+        <item>green,red,blue</item>
+    </string-array>
+
+
+
+    <string name="school1">\nBorupgaard Gymnasium
+        <a href="www.borupgaard-gym.dk" target="_top">www.borupgaard-gym.dk</a>\n
+    </string>
+    <string name="school2">\nΓΕΝΙΚΟ ΛΥΚΕΙΟ ΑΓΡΙΑΣ
+        <a href="www.lykeioagrias.blogspot.hu" target="_top">www.lykeioagrias.blogspot.hu</a>\n
+    </string>
+    <string name="school3">\nPetrik Lajos Két Tanítási Nyelvű Vegyipari, Környezetvédelmi és Informatikai Szakgimnázium
+        <a href="www.petrik.hu" target="_top">www.petrik.hu</a>\n
+    </string>
+    <string name="school4">\nScuole Liceo Scientifico Statale B. Rosetti
+        <a href="www.liceorosetti.gov.it" target="_top">www.liceorosetti.gov.it</a>\n
+    </string>
+    <string name="school5">\nUtenos Dauniškio gimnazija
+        <a href="www.dauniskis.utena.lm.lt" target="_top">www.dauniskis.utena.lm.lt</a>\n
+    </string>
+    <string name="school6">\nZespół Szkół w Głogowie Małopolskim
+        <a href="www.zs.glogow-mlp.pl" target="_top">www.zs.glogow-mlp.pl</a>\n
+    </string>
+    <string name="school7">\nAgrupamento de Escolas Anselmo de Andrade
+        <a href="www.anselmodeandrade.pt" target="_top">www.anselmodeandrade.pt</a>\n
+    </string>
+    <string name="school8">\nColegiul Tehnic Ana Aslan
+        <a href="www.colegiulaslancluj.ro" target="_top">www.colegiulaslancluj.ro</a>\n
+    </string>
+
+
+    <string name="developers">
+        \nDevelopers:\n
+                Merényi Miklós\n
+                Puskás Dávid"
+    </string>
+
+
+    <string name="inventor">
+        \nInventor:\n
+            Miguel Rodrigues\n
+    </string>
+
+
+    <string name="school">
+        \nSchools:\n
+    </string>
+
+
+    <string name="newgame">New Game</string>
+    <string name="continuee">Continue</string>
+    <string name="credits">Credits</string>
+    <string name="options">Options</string>
+
+    <string-array name="items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+    </string-array>
+
+
+</resources>

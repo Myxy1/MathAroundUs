@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/hatter3"
+    >
+
+    <TextView
+        android:text="WELCOME"
+        android:textStyle="bold"
+        android:textColor="#eaf1ec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/welcome" />
+
+
+
+
+
+    <TextView
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/name2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="50dp"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:text="@string/newgame"
+            android:textColor="#f8f7f7"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:background="@drawable/mybutton"
+            />
+
+
+        <Button
+            android:text="@string/continuee"
+            android:textColor="#f8f7f7"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="21dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            />
+
+
+        <Button
+            android:text="@string/options"
+            android:textColor="#ec2626"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_option"
+            android:textSize="25dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/mybutton"
+
+            />
+
+        <Button
+            android:text="@string/credits"
+            android:textColor="#f8f7f7"
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="21dp"
+
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
