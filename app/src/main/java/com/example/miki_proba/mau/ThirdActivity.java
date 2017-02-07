@@ -22,7 +22,7 @@ public class ThirdActivity extends AppCompatActivity {
     private static final String TAG = "ThirdActivity";
     private TextView name2;     //A játékos nevének a mező.
     private String name;        //A játékos neve.
-    private ImageView img;      //a facebook logo kép.
+    private ImageView img1,img2;      //a facebook logo és az erasmus kép.
     private Boolean exit = false;   //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
     private View button_options;    //Beállítások opció gomb.
     private Button button1, button4;    //A játék indítása gomb és a készítők gomb.
@@ -70,10 +70,20 @@ public class ThirdActivity extends AppCompatActivity {
             }
         });
 
-        img = (ImageView)findViewById(R.id.fb);
-        img.setOnClickListener(new View.OnClickListener(){
+        img1 = (ImageView)findViewById(R.id.fb);
+        img1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Uri uri = Uri.parse("http://www.facebook.com/MathAroundUs");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
+
+        img2 = (ImageView)findViewById(R.id.erasmus);
+        img2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Uri uri = Uri.parse("https://twinspace.etwinning.net/9782/home");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }
