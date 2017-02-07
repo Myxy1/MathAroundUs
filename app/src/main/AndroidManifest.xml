@@ -38,6 +38,15 @@
             android:name=".Game"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".Game2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Game3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Game4"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Lose"
             android:screenOrientation="portrait" />
         <activity
@@ -45,6 +54,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Options"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Levels"
             android:screenOrientation="portrait" />
     </application>
 

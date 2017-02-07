@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">MAU</string>
 
-    <string-array name="questions" formatted="false">//kérdések
+    /////////////////////////
+    //  LEVEL 1 QUESTIONS  //
+    ////////////////////////
+
+    <string-array name="level1_q" formatted="false">
         <item>Knowing that in Italy the fixed telephone numbers have 10 digits whose the first is 0, how many numbers can we have?</item>
         <item>The distance between two numbers in the Fibonacci sequence is 2 places. What is the quotient of the two numbers?</item>
         <item>The perimeter proportion of two homothetic polygons equals 5. How many times is the area of the first polygon greater than the area of the second polygon?</item>
@@ -29,142 +33,72 @@
         <item>Which colors does the RGB system use?</item>
     </string-array>
 
+    /////////////////////////
+    //  LEVEL 1 OPTIONS   //
+    ////////////////////////
 
-    <string-array name="opt" formatted="false">//lehetőségek
+    <string-array name="level1_o" formatted="false">//level1 lehetőségek
+        <item>10,000</item><item>1,000,000,000</item><item>999,999,999</item><item>100,000</item>
 
-        <item>10,000</item>
-        <item>1,000,000,000</item>
-        <item>999,999,999</item>
-        <item>100,000</item>
+        <item>2,618</item><item>1,618</item><item>0,618</item><item>3,618</item>
 
-        <item>2,618</item>
-        <item>1,618</item>
-        <item>0,618</item>
-        <item>3,618</item>
+        <item>25</item><item>5</item><item>10</item><item>2,5</item>
 
-        <item>25</item>
-        <item>5</item>
-        <item>10</item>
-        <item>2,5</item>
+        <item>55</item><item>77</item><item>88</item><item>89</item>
 
-        <item>55</item>
-        <item>77</item>
-        <item>88</item>
-        <item>89</item>
+        <item>1000 kg</item><item>2000 kg</item><item>1500 kg</item><item>500 kg</item>
 
-        <item>1000 kg</item>
-        <item>2000 kg</item>
-        <item>1500 kg</item>
-        <item>500 kg</item>
+        <item>29, 34, 88</item><item>34, 55, 89</item><item>13, 8, 5</item><item>1, 1, 2</item>
 
-        <item>29, 34, 88</item>
-        <item>34, 55, 89</item>
-        <item>13, 8, 5</item>
-        <item>1, 1, 2</item>
+        <item>1, 1, 2, 3, 5, 8, 13, 21</item><item>2, 2, 4, 6, 8, 10, 16, 26</item><item>3, 5, 7, 9,  11, 13, 15</item><item>13, 17, 19, 23, 29, 31</item>
 
-        <item>1, 1, 2, 3, 5, 8, 13, 21</item>
-        <item>2, 2, 4, 6, 8, 10, 16, 26</item>
-        <item>3, 5, 7, 9,  11, 13, 15</item>
-        <item>13, 17, 19, 23, 29, 31</item>
+        <item>0</item><item>1</item><item>2</item><item>3</item>
 
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
+        <item>Watt</item><item>kW</item><item>kWh</item><item>Volt</item>
 
-        <item>Watt</item>
-        <item>kW</item>
-        <item>kWh</item>
-        <item>Volt</item>
+        <item>Hertz (Hz)</item><item>J</item><item>m/s</item><item>Kelvin</item>
 
-        <item>Hertz (Hz)</item>
-        <item>J</item>
-        <item>m/s</item>
-        <item>Kelvin</item>
+        <item>12 hours</item><item>1 month</item><item>24 hours</item><item>1 year</item>
 
-        <item>12 hours</item>
-        <item>1 month</item>
-        <item>24 hours</item>
-        <item>1 year</item>
+        <item>Wireless communication protocol</item><item>The computer screen</item><item>The screen resolution</item><item>Colours</item>
 
-        <item>Wireless communication protocol</item>
-        <item>The computer screen</item>
-        <item>The screen resolution</item>
-        <item>Colours</item>
+        <item>a 2 Byte number</item><item>a 12 bit number</item><item>10 (in decimal notation)</item><item>F (in hexidecimal notation)</item>
 
-        <item>a 2 Byte number</item>
-        <item>a 12 bit number</item>
-        <item>10 (in decimal notation)</item>
-        <item>F (in hexidecimal notation)</item>
+        <item>Babylonians</item><item>Indians</item><item>Egyptians</item><item>Pythagoreans</item>
 
-        <item>Babylonians</item>
-        <item>Indians</item>
-        <item>Egyptians</item>
-        <item>Pythagoreans</item>
+        <item>Acceleration</item><item>slope</item><item>the Theory of relativity</item><item>complex numbers</item>
 
-        <item>Acceleration</item>
-        <item>slope</item>
-        <item>the Theory of relativity</item>
-        <item>complex numbers</item>
+        <item>10</item><item>1024</item><item>8</item><item>10</item>
 
-        <item>10</item>
-        <item>1024</item>
-        <item>8</item>
-        <item>2</item>
+        <item>72° and 36°</item><item>70 ° and 72°</item><item>72° and 72°</item><item>36° and 71°</item>
 
-        <item>72° and 36°</item>
-        <item>70 ° and 72°</item>
-        <item>72° and 72°</item>
-        <item>36° and 71°</item>
+        <item>(a+b)/a</item><item>(a+b)</item><item>(a+b)/a+a</item><item>(a+b)/a = a/b</item>
 
-        <item>(a+b)/a</item>
-        <item>(a+b)</item>
-        <item>(a+b)/a+a</item>
-        <item>(a+b)/a = a/b</item>
+        <item>smaller than 2°C</item><item>1.5°C</item><item>bigger than 2°C</item><item>3°C</item>
 
-        <item>smaller than 2°C</item>
-        <item>1.5°C</item>
-        <item>bigger than 2°C</item>
-        <item>3°C</item>
+        <item>50$</item><item>100$</item><item>Free</item><item>300$</item>
 
-        <item>50$</item>
-        <item>100$</item>
-        <item>Free</item>
-        <item>300$</item>
+        <item>cheese</item><item>poultry meat</item><item>pork meat</item><item>potato</item>
 
-        <item>cheese</item>
-        <item>poultry meat</item>
-        <item>pork meat</item>
-        <item>potato</item>
+        <item>15</item><item>377</item><item>610</item><item>233</item>
 
-        <item>15</item>
-        <item>377</item>
-        <item>610</item>
-        <item>233</item>
+        <item>9</item><item>63</item><item>2584</item><item>987</item>
 
-        <item>9</item>
-        <item>63</item>
-        <item>2584</item>
-        <item>987</item>
+        <item>hexadecimal </item><item>decimal</item><item>numeral</item><item>3-base</item>
 
-        <item>hexadecimal </item>
-        <item>decimal</item>
-        <item>numeral</item>
-        <item>3-base</item>
-
-        <item>red,green,brown</item>
-        <item>red,gray,blue</item>
-        <item>green,red,blue</item>
-        <item>blue,red,yellow</item>
+        <item>red,green,brown</item><item>red,gray,blue</item><item>green,red,blue</item><item>blue,red,yellow</item>
     </string-array>
 
+    /////////////////////////
+    //  LEVEL 1 ANSWERS   //
+    ////////////////////////
 
-    <string-array name="ans" formatted="false">//jó válaszok
+    <string-array name="level1_a" formatted="false">//jó válaszok
         <item>1,000,000,000</item>
         <item>2,618</item>
         <item>25</item>
         <item>89</item>
-        <item>1000</item>
+        <item>1000 kg</item>
         <item>34, 55, 89</item>
         <item>1, 1, 2, 3, 5, 8, 13, 21</item>
         <item>0</item>
@@ -176,7 +110,7 @@
         <item>Pythagoreans</item>
         <item>slope</item>
         <item>8</item>
-        <item>72°and 36°</item>
+        <item>72° and 36°</item>
         <item>(a+b)/a = a/b</item>
         <item>smaller than 2°C</item>
         <item>Free</item>
@@ -187,7 +121,365 @@
         <item>green,red,blue</item>
     </string-array>
 
+    /////////////////////////
+    //  LEVEL 2 QUESTIONS  //
+    ////////////////////////
 
+    <string-array name="level2_q" formatted="false">
+        <item>What is the molarity (% w/V) of a solution obtained by dissolving 1.92 g of NaOH in 100 mL of water solution?</item>
+        <item>How many mL of a 0.48 M NaOH solution are needed to neutralize 100 mL of a 0.12 M HCl solution?</item>
+        <item>If you have picture with a length of  2100 pixels and you print it on a Laserjet printer (300 DPI), how wide will the picture become on paper?</item>
+        <item>What is another word for “centre of mass”?</item>
+        <item>The golden ratio divides a line in two parts of unequal size. If the larger part is called a and the smaller part b, which of the following equations is true?</item>
+        <item>Only one of the following lists is organised in rising order(from the lowest to the highest) for the water used in their production :</item>
+        <item>What is the percentage of water used for the production of soy compared to beef meat production?</item>
+        <item>Which of the following is NOT a scripting language used on the web?</item>
+        <item>By default a real number is treated as a</item>
+        <item>How do we determine the centre of gravity of a body with irregular shape?</item>
+        <item>With which tool could i make an ICT game?</item>
+        <item>Even if the universe expands, the ratio between the recessional velocity from one galaxy to another and their distance that obviously is getting bigger and bigger remains constant, because of</item>
+        <item>In order to measure something we need a measure unit. The measure unit in music is</item>
+        <item>The researchers concluded that the moon moves away slightly from Earth, the distance between them increasing by 3,8 cm each year. Approximate what is the distance that the moon moved away from Earth in the last 150 years?</item>
+        <item>A sample of a gram of Carbon is removed from a piece of wood taken from an ancient object. The decay rate of Carbon-14 in the sample is 12,6 counts per second. The decay rate in a growing tree is 15,3 counts per second. How old is the object?</item>
+        <item>The binary code representation of the number 233 is:</item>
+        <item>The octal representation of the binary number 11011 is:</item>
+        <item>Greenhouse effect is the main cause of climate change. Which of the following gases contributes to the greenhouse effect most?</item>
+        <item>In Poland, the area where the air pollution exceeds air quality limits is inhabited by approximately 20% of people. Knowing that the population of Poland is 38 million calculate the number of people who breathe polluted air.</item>
+        <item>What does abs(x) stand for?</item>
+        <item>The Liberty Bridge in Budapest is 333.6 m long. My average step is 80 cm long. How many steps does it take for me in average to walk across the Liberty Bridge?</item>
+        <item>Compare the focus distance with Sun size</item>
+        <item>Why are hundredths of a second up to 99 while seconds are up to 59?</item>
+        <item>Minutes and seconds are considered on the base of:</item>
+        <item>Annual distribution of the number of events and the burnt area in Portugal between 2003 and 2013. The year which recorded the major number of events was:</item>
+    </string-array>
+
+    /////////////////////////
+    //  LEVEL 2 OPTIONS   //
+    ////////////////////////
+
+    <string-array name="level2_o" formatted="false">
+        <item>0,48 M</item><item>0,60 M</item><item>1 M</item><item>0,77 M</item>
+
+        <item>10 mL</item><item>60 mL</item><item>25 mL</item><item>35 mL</item>
+
+        <item>7 inches</item><item>0,14 inches</item><item>14 inches</item><item>0,7 inches</item>
+
+        <item>Mass</item><item>The center of gravity</item><item>The gravitational force</item><item>The gravitational acceleration</item>
+
+        <item>ab=ba</item><item>ab=a+ba</item><item>ba=ba+b</item><item>ab=a+ba</item>
+
+        <item>cheese, soy, potato, cereals</item><item>soy, potato, cheese, cereals</item><item>cereals, cheese, soy, potato</item><item>cheese, potato, cereals, soy</item>
+
+        <item>32%</item><item>12%</item><item>26%</item><item>68%</item>
+
+        <item>JavaScript</item><item>FogScript</item><item>ASP</item><item>VBScript</item>
+
+        <item>float</item><item>double</item><item>long double</item><item>far double</item>
+
+        <item>with pin and plumb</item><item>with the spirit-level</item><item>with the ruler</item><item>A and C</item>
+
+        <item>ClamAV</item><item>Audacity</item><item>Scratch</item><item>Chromium</item>
+
+        <item>The gravity</item><item>The central angle that remains constant</item><item>The stable mass</item><item>Humble law</item>
+
+        <item>The number of bits per minute</item><item>The time distance between two bits</item><item>The numerator of the meter of the score</item><item>The number of the score measures</item>
+
+        <item>570 cm</item><item>550 cm</item><item>600 cm</item><item>500 cm</item>
+
+        <item>Appx. 1700 years old</item><item>Appx. 1600 years old</item><item>Appx. 2100 years old</item><item>Appx. 2000 years old</item>
+
+        <item>01111011</item><item>10110001</item><item>11101001</item><item>11101101</item>
+
+        <item>30</item><item>47</item><item>33</item><item>27</item>
+
+        <item>Ozone</item><item>Carbon dioxide</item><item>Sulfur oxide IV</item><item>Water vapor</item>
+
+        <item>76 million</item><item>760 thousand</item><item>760 million</item><item>7600 thousand</item>
+
+        <item>the abscissa</item><item>the location of x</item><item>the sign of x</item><item>the absolute value of x</item>
+
+        <item>417</item><item>4170</item><item>42</item><item>471</item>
+
+        <item>5.211</item><item>3.448</item><item>1.692</item><item>1</item>
+
+        <item>Because they have a different value</item><item>Because we are accustomed to this definition</item><item>Because they have different bases of numbers</item><item>Because 1 minute is composed of 60 sec</item>
+
+        <item>50</item><item>100</item><item>10</item><item>60</item>
+
+        <item>2013</item><item>2003</item><item>2005</item><item>2009</item>
+    </string-array>
+
+    /////////////////////////
+    //  LEVEL 2 ANSWERS   //
+    ////////////////////////
+
+    <string-array name="level2_a" formatted="false">
+        <item>0,48 M</item>
+        <item>25 mL</item>
+        <item>7 inches</item>
+        <item>The center of gravity</item>
+        <item>ab=a+ba</item>
+        <item>cheese, potato, cereals, soy</item>
+        <item>12%</item>
+        <item>FogScript</item>
+        <item>double</item>
+        <item>with pin and plumb</item>
+        <item>Scratch</item>
+        <item>The central angle that remains constant</item>
+        <item>The time distance between two bits</item>
+        <item>570 cm</item>
+        <item>Appx. 1600 years old</item>
+        <item>11101001</item>
+        <item>33</item>
+        <item>Carbon dioxide</item>
+        <item>7600 thousand</item>
+        <item>the absolute value of x</item>
+        <item>417</item>
+        <item>3.448</item>
+        <item>Because they have different bases of numbers</item>
+        <item>60</item>
+        <item>2005</item>
+    </string-array>
+
+    /////////////////////////
+    //  LEVEL 3 QUESTIONS  //
+    ////////////////////////
+
+    <string-array name="level3_q" formatted="false">
+        <item>Composition by gas of the emissions of Greenhouse Gases in Portugal, in 2012. The most representative greenhouse gas in the emissions in 2012 was:</item>
+        <item>The sound emitted by a musical instrument is:</item>
+        <item>The gravitational pull that the Sun exercises on the Earth is called…</item>
+        <item>In 1988 the Portuguese painter Graça Morais created the work "Masks (x)" with 52 cm of height and 72 cm of width. To reproduce the painting half the size which method you would use?</item>
+        <item>How do you write the number 1000110 ÷2  in base 10?</item>
+        <item>What does "Ctrl+s" do?</item>
+        <item>The hexadecimal representation of the octal number 420 is:</item>
+        <item>Which of the following is a Pythagorean triple?</item>
+        <item>The length of the shadow of the St. Michael is Church tower (in the citycentre  of Cluj-Napoca) is 80m, in a day when the Sun is 45 degree over the horizon. How high is the tower of this church?</item>
+        <item>How many solutions are there for a quadratic equation if the discriminant is 0?</item>
+        <item>The greenhouse effect is related to:</item>
+        <item>A longer wavelength makes  _______  tone:</item>
+        <item>If a string is shortened to 2/3 of its length, then it will produce a note being</item>
+        <item>Without the greenhouse effect the temperature of earth would be around :</item>
+        <item>If a painting has perspective then</item>
+        <item>Which one of the following shapes cannot not be used for plane tessellation</item>
+        <item>In order to keep accurate records, archeologists have to measure and mark areas in the shape of</item>
+        <item>What is the line segment of Golden Ratio?</item>
+        <item>Why does the candle swing while it burns?</item>
+        <item>The circumference of the Vatican dome is 153,86 m. Calculate its radius.</item>
+        <item>What is the molarity of a 37% (w/w) HCl solution whose density is 1.186 g/mL?</item>
+        <item>What kind of mathematics examines renewable energy recourse models?</item>
+        <item>Sonata is made of 100 beats, is divided into two parts: 38 in the first  and 62  the second . Which number is close to this ratio?</item>
+        <item>Which of the following is the numerical equivalent of  one quintillion?</item>
+        <item>The “giga“ is :</item>
+    </string-array>
+
+    /////////////////////////
+    //  LEVEL 3 OPTIONS   //
+    ////////////////////////
+
+    <string-array name="level3_o" formatted="false">
+        <item>Nitrous oxide</item><item>Carbon dioxide</item><item>Methane</item><item>Fluorinated Gases (CFCs, HFCs, PFCs)</item>
+
+        <item>An electromagnetic wave</item><item>An electric wave</item><item>A magnetic wave</item><item>A mechanic wave</item>
+
+        <item>Centripetal</item><item>Centrifugal</item><item>Repulsive</item><item>Eccentric</item>
+
+        <item>Vanishing Point</item><item>Geometrical grid</item><item>Greek canon</item><item>Gold Section</item>
+
+        <item>64</item><item>30</item><item>35</item><item>70</item>
+
+        <item>copy something</item><item>save the document</item><item>paste something</item><item>close the document</item>
+
+        <item>913</item><item>9A</item><item>110</item><item>101</item>
+
+        <item>4cm, 3mm, 5cm</item><item>6m, 8m, 10cm</item><item>5dm, 120cm 13dm</item><item>26cm, 24dm, 10cm</item>
+
+        <item>45 m</item><item>60 m</item><item>80 m</item><item>120 m</item>
+
+        <item>3</item><item>2</item><item>1</item><item>0</item>
+
+        <item>Farming</item><item>Global warming</item><item>Production of energy</item><item>The amount of vegetation</item>
+
+        <item>a higher</item><item>the same</item><item>a deeper</item><item>a louder</item>
+
+        <item>an octave higher</item><item>a fifth lower</item><item>a fourth lower</item><item>a fifth higher</item>
+
+        <item>5°C</item><item>10 degree C</item><item>-12 degree C</item><item>-18 degree C</item>
+
+        <item>The shapes in the back are taller than those in the front</item><item>There is an escape point</item><item>There are no parallel lines</item><item>Somewhere there is a golden section</item>
+
+        <item>Squares</item><item>hexagons</item><item>Pentagon</item><item>equilateral triangle</item>
+
+        <item>triangles</item><item>perfect squares</item><item>octagons</item><item>circles</item>
+
+        <item>1.618</item><item>1.421</item><item>1.617</item><item>1.512</item>
+
+        <item>To find the balance</item><item>To keep the same moments of the rotation</item><item>To find the center of the gravity</item><item>all of the above</item>
+
+        <item>27 m</item><item>19 m</item><item>49 m</item><item>24,5 m</item>
+
+        <item>12,19 mol</item><item>4,05 mol</item><item>69,88 mol</item><item>44,03 mol</item>
+
+        <item>Logic</item><item>Statistics</item><item>Calculus and Analysis</item><item>Combinatorial</item>
+
+        <item>0,613</item><item>0,617</item><item>0,618</item><item>0,615</item>
+
+        <item>1,000,000,000,000,000</item><item>1,000,000,000,000,000,000</item><item>1,000,000,000,000,000,000,000</item><item>1,000,000,000,000,000,000,000,000</item>
+
+        <item>1,000,000</item><item>1,000</item><item>10,000</item><item>1000000000</item>
+    </string-array>
+
+    /////////////////////////
+    //  LEVEL 3 ANSWERS   //
+    ////////////////////////
+
+    <string-array name="level3_a" formatted="false">
+        <item>Carbon dioxide</item>
+        <item>A mechanic wave</item>
+        <item>Centripetal</item>
+        <item>Geometrical grid</item>
+        <item>70</item>
+        <item>save the document</item>
+        <item>110</item>
+        <item>5dm, 120cm 13dm</item>
+        <item>80 m</item>
+        <item>1</item>
+        <item>Global warming</item>
+        <item>a deeper</item>
+        <item>a fifth higher</item>
+        <item>10 degree C</item>
+        <item>There is an escape point</item>
+        <item>Pentagon</item>
+        <item>perfect squares</item>
+        <item>1.618</item>
+        <item>To keep the same moments of the rotation</item>
+        <item>24,5 m</item>
+        <item>12,19 mol</item>
+        <item>Statistics</item>
+        <item>0,618</item>
+        <item>1,000,000,000,000,000,000</item>
+        <item>1000000000</item>
+    </string-array>
+
+    /////////////////////////
+    //  LEVEL 4 QUESTIONS  //
+    ////////////////////////
+
+    <string-array name="level4_q" formatted="false">
+        <item>The first man who found a connection between mathematics and music:</item>
+        <item>In a painting, the height of a building, is 15cm. What is the drawing scale if the building is 7.5 meters high in real?</item>
+        <item>The sound’s sharpness produced by a string is related to</item>
+        <item>For an experimental measurement of the sun’s diameter you do NOT need</item>
+        <item>The universe is expansion is resisted by</item>
+        <item>How many planets are between the Sun and the Earth?</item>
+        <item>How long does it take for the Earth to orbit around the Sun?</item>
+        <item>What is COP 21?</item>
+        <item>If you mix a solution where the mixing ratio is 4:1 (e.g. 4 parts juice and 1 part water), how concentrated will the solution be in percentage?</item>
+        <item>Calculate how many melodies can be composed using the 5 musical notes arranging the glasses in all possible positions, without using the same note twice.</item>
+        <item>Knowing that by adding a dot next to a musical note it lengthens the note with half of its original value, calculate the dotted value of a sixteenth note.</item>
+        <item>Determine the age of a wooden vessel knowing that the concentration of radioactive isotope Carbon-14 in a given sample equals 25% of its atmospheric concentration. The half-life of the isotope is 5730 years. </item>
+        <item>Which of these scales is the largest?</item>
+        <item>The perimeter proportion of two homothetic polygons equals 5. How many times is the area of the first polygon greater than the area of the second polygon?</item>
+        <item>These numbers show the opinion on drinking water quality of the countries in the MAU project. Hungary: 79.46, Portugal: 87.02, Denmark: 77.27, Poland: 64.9, Lithuania: 95.83, Italy: 65.54, Romania: 55.6, Greece: 77.41. What is the average of these numbers?</item>
+        <item>"Me You And math Together Let is have a fun day And explore the world around us!" This is a Fibonacci poem. Why?</item>
+        <item>A rod with the length of 1 meter has on its ends two bodies on the right, one with a mass of 10kg and on the left side a mass of 20kg. The centre of the mass of this system can be found:</item>
+        <item>In a gasoline sample, 20 mL, was extracted 1,5 mL of Ethanol. The Ethanol percentage in the sample is:</item>
+        <item>Evolution of the importance of renewable electrical energy in Portugal between 1999 and 2012.Between 1999 and 2012, the increase of renewable electrical energy was:</item>
+        <item>Which is the decimal number which responds to the binary one (10101010)</item>
+        <item>The autumnal equinox we find using the formula:</item>
+        <item>How much CO2 Lithuania has to reduce in the atmosphere?</item>
+        <item>If you are multiplying powers with the same base:</item>
+        <item>These numbers show the opinion on drinking water quality of the countries in the MAU project. Hungary: 79.46, Portugal: 87.02, Denmark: 77.27, Poland: 64.9, Lithuania: 95.83, Italy: 65.54, Romania: 55.6, Greece: 77.41. What is the median of these numbers?</item>
+        <item>These numbers show the opinion on drinking water quality of the countries in the MAU project. Hungary: 79.46, Portugal: 87.02, Denmark: 77.27, Poland: 64.9, Lithuania: 95.83, Italy: 65.54, Romania: 55.6, Greece: 77.41. What is the range of these numbers?</item>
+    </string-array>
+
+    /////////////////////////
+    //  LEVEL 4 OPTIONS   //
+    ////////////////////////
+
+    <string-array name="level4_o" formatted="false">
+        <item>Fibonacci</item><item>Bach</item><item>Pythagoras</item><item>Aristotle</item>
+
+        <item>1:20</item><item>1:100</item><item>1:50</item><item>1:200</item>
+
+        <item>The string is length</item><item>The string is thickness</item><item>The string is color</item><item>The material that is made of</item>
+
+        <item>The distance between earth - sun</item><item>proportions</item><item>The gravitation acceleration</item><item>a sun is idol</item>
+
+        <item>The Humble is constant</item><item>The gravity</item><item>The distance between galaxies</item><item>The recessional velocity</item>
+
+        <item>0</item><item>1</item><item>2</item><item>3</item>
+
+        <item>1 year</item><item>1/2 year</item><item>a quarter of a year</item><item>a month</item>
+
+        <item>A special blend of coffee</item><item>A police congress in Las Vegas in 2021</item><item>the football cup taking place in 2021</item><item>A mutual agreement amongst 195 of the world’s countries to keep the rise of the temperature below 2 degrees in the year 2100</item>
+
+        <item>20%</item><item>25%</item><item>75%</item><item>80%</item>
+
+        <item>130</item><item>100</item><item>120</item><item>140</item>
+
+        <item>1/32</item><item>1/8</item><item>3/4</item><item>3/32</item>
+
+        <item>11400 years old</item><item>11462 years old</item><item>12000 years old</item><item>15000 years old</item>
+
+        <item>1 cm - 30 m</item><item>1:75,000,000</item><item>1:500,000</item><item>1 cm - 10 km</item>
+
+        <item>25</item><item>5</item><item>10</item><item>2,5</item>
+
+        <item>70.12</item><item>75.83</item><item>77.34</item><item>84.57</item>
+
+        <item>The number of syllables in each line are the elements of the Fibonacci sequence</item><item>The number of letters in each line are Fibonacci numbers</item><item>It was written by Fibonacci</item><item>The first letters spell Fibonacci is name</item>
+
+        <item>0, 50 m away of the body which is on the left side</item><item>near the body of 10 kg</item><item>0, 50 m away of the body which is on the right side</item><item>near the body of 20 kg</item>
+
+        <item>2,0 %</item><item>7,5 %</item><item>5,7 %</item><item>1,5 %</item>
+
+        <item>18 %</item><item>20 %</item><item>21 %</item><item>15 %</item>
+
+        <item>170</item><item>100</item><item>87</item><item>128</item>
+
+        <item>α = 90º - φ</item><item>α = 90º  - δ</item><item>α= 90º - (φ - 23,5º)</item><item>α = 90º - (φ+ 23,5º)</item>
+
+        <item>22 %</item><item>21 %</item><item>19 %</item><item>14 %</item>
+
+        <item>10 • 10 • 10 = 10 • 10 • 10</item><item>10 • 10 • 10 = 10</item><item>10 • 10 • 10 = 10 • 10</item><item>10 • 10 • 10 = 10 • 10 • 10 • 10 • 10</item>
+
+        <item>77.30</item><item>77.33</item><item>77.34</item><item>77.38</item>
+
+        <item>39.78</item><item>151.43</item><item>75.72</item><item>40.23</item>
+    </string-array>
+
+    /////////////////////////
+    //  LEVEL 4 ANSWERS   //
+    ////////////////////////
+
+    <string-array name="level_a" formatted="false">
+        <item>Bach</item>
+        <item>1:50</item>
+        <item>The string is length</item>
+        <item>The gravitation acceleration</item>
+        <item>The gravity</item>
+        <item>2</item>
+        <item>1 year</item>
+        <item>A mutual agreement amongst 195 of the world’s countries to keep the rise of the temperature below 2 degrees in the year 2100</item>
+        <item>75%</item>
+        <item>120</item>
+        <item>3/32</item>
+        <item>11462 years old</item>
+        <item>1 cm - 30 m</item>
+        <item>25</item>
+        <item>75.83</item>
+        <item>The number of syllables in each line are the elements of the Fibonacci sequence</item>
+        <item>near the body of 20 kg</item>
+        <item>7,5 %</item>
+        <item>21 %</item>
+        <item>170</item>
+        <item>α = 90º - φ</item>
+        <item>21 %</item>
+        <item>10 • 10 • 10 = 10 • 10 • 10</item>
+        <item>77.34</item>
+        <item>40.23</item>
+    </string-array>
 
     <string name="school1">\nBorupgaard Gymnasium
         <a href="www.borupgaard-gym.dk" target="_top">www.borupgaard-gym.dk</a>\n
@@ -242,6 +534,7 @@
     <string name="continuee">Continue</string>
     <string name="credits">Credits</string>
     <string name="options">Options</string>
+    <string name="share">Share Us</string>
 
     <string-array name="items">
         <item>Item 1</item>

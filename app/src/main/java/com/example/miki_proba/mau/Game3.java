@@ -4,10 +4,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -16,13 +16,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-
-
 import java.util.Random;
 
-public class Game extends AppCompatActivity {
 
+public class Game3 extends AppCompatActivity {
 
     private Boolean exit = false;
     private TextView tv;
@@ -62,10 +59,10 @@ public class Game extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         elfogadva = "accepted";
 
-        questions = getResources().getStringArray(R.array.level1_q);
+        //questions = getResources().getStringArray(R.array.level2_q);
 
-        ans = getResources().getStringArray(R.array.level1_a);
-        opt = getResources().getStringArray(R.array.level1_o);
+        //ans = getResources().getStringArray(R.array.level2_a);
+       // opt = getResources().getStringArray(R.array.level2_o);
 
         tv = (TextView)findViewById(R.id.textView1);
         question = (TextView)findViewById(R.id.textView3);
@@ -96,12 +93,12 @@ public class Game extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                AlertDialog.Builder alert1 = new AlertDialog.Builder(Game.this, R.style.AppCompatAlertDialogStyle);
+                AlertDialog.Builder alert1 = new AlertDialog.Builder(Game3.this, R.style.AppCompatAlertDialogStyle);
                 alert1.setMessage("Do you want to leave game?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener(){
                             @Override
                             public void onClick(DialogInterface dialog, int which){
-                                Intent tomenu = new Intent(Game.this,ThirdActivity.class);
+                                Intent tomenu = new Intent(Game3.this,ThirdActivity.class);
                                 startActivity(tomenu);
                                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                             }
@@ -121,9 +118,9 @@ public class Game extends AppCompatActivity {
                 if (rb1.isChecked()==true || rb2.isChecked()==true || rb3.isChecked()==true || rb4.isChecked()==true)
                 {
                     topic();
-                    Intent towin = new Intent(Game.this,Win.class);
+                    Intent towin = new Intent(Game3.this,Win.class);
 
-                    Intent tolose = new Intent(Game.this,Lose.class);
+                    Intent tolose = new Intent(Game3.this,Lose.class);
                     RadioButton uans =(RadioButton)findViewById(rg.getCheckedRadioButtonId());
                     String ansText="";
                     ansText = uans.getText().toString();
@@ -179,13 +176,13 @@ public class Game extends AppCompatActivity {
                         editor.putString("level2", elfogadva);
                         editor.apply();
                         editor.commit();
-                        Toast.makeText(Game.this, "Level unlocked", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Game3.this, "Level unlocked", Toast.LENGTH_SHORT).show();
 
                         startActivity(towin);
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     }
                 }else{
-                    Toast.makeText(Game.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Game3.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -202,27 +199,35 @@ public class Game extends AppCompatActivity {
         switch (kategoriak)
         {
             case 0 :
+                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.denmark_happy);
                 break;
             case 1 :
+                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.greece_happy);
                 break;
             case 2 :
+                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.hungary_happy);
                 break;
             case 3 :
+                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.italy_happy);
                 break;
             case 4 :
+                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.lithuania_happy_);
                 break;
             case 5 :
+                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.polonia_happy);
                 break;
             case 6 :
+                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.portugal_happy);
                 break;
             case 7 :
+                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.romania_happy);
                 break;
         }

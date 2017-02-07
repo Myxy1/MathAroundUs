@@ -25,7 +25,7 @@ public class ThirdActivity extends AppCompatActivity {
     private ImageView img1,img2;      //a facebook logo és az erasmus kép.
     private Boolean exit = false;   //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
     private View button_options;    //Beállítások opció gomb.
-    private Button button1, button4;    //A játék indítása gomb és a készítők gomb.
+    private Button button1, button4, button5;    //A játék indítása gomb és a készítők gomb.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class ThirdActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ThirdActivity.this,Game.class);
+                Intent intent = new Intent(ThirdActivity.this,Levels.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
@@ -67,6 +67,20 @@ public class ThirdActivity extends AppCompatActivity {
                 Intent option = new Intent(ThirdActivity.this, Options.class);
                 startActivity(option);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            }
+        });
+
+        button5 = (Button) findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Intent.ACTION_SEND);
+                myIntent.setType("text/plain");
+                String shareBody = "This game is awesome!!! You need to download this game:";
+                String shareSub = "Your Subject here";
+                myIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
+                myIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+                startActivity(Intent.createChooser(myIntent, "Share using"));
             }
         });
 

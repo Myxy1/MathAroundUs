@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class Game extends AppCompatActivity {
+public class Game2 extends AppCompatActivity {
 
 
     private Boolean exit = false;
@@ -62,10 +62,10 @@ public class Game extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         elfogadva = "accepted";
 
-        questions = getResources().getStringArray(R.array.level1_q);
+        questions = getResources().getStringArray(R.array.level2_q);
 
-        ans = getResources().getStringArray(R.array.level1_a);
-        opt = getResources().getStringArray(R.array.level1_o);
+        ans = getResources().getStringArray(R.array.level2_a);
+        opt = getResources().getStringArray(R.array.level2_o);
 
         tv = (TextView)findViewById(R.id.textView1);
         question = (TextView)findViewById(R.id.textView3);
@@ -96,12 +96,12 @@ public class Game extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                AlertDialog.Builder alert1 = new AlertDialog.Builder(Game.this, R.style.AppCompatAlertDialogStyle);
+                AlertDialog.Builder alert1 = new AlertDialog.Builder(Game2.this, R.style.AppCompatAlertDialogStyle);
                 alert1.setMessage("Do you want to leave game?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener(){
                             @Override
                             public void onClick(DialogInterface dialog, int which){
-                                Intent tomenu = new Intent(Game.this,ThirdActivity.class);
+                                Intent tomenu = new Intent(Game2.this,ThirdActivity.class);
                                 startActivity(tomenu);
                                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                             }
@@ -121,9 +121,9 @@ public class Game extends AppCompatActivity {
                 if (rb1.isChecked()==true || rb2.isChecked()==true || rb3.isChecked()==true || rb4.isChecked()==true)
                 {
                     topic();
-                    Intent towin = new Intent(Game.this,Win.class);
+                    Intent towin = new Intent(Game2.this,Win.class);
 
-                    Intent tolose = new Intent(Game.this,Lose.class);
+                    Intent tolose = new Intent(Game2.this,Lose.class);
                     RadioButton uans =(RadioButton)findViewById(rg.getCheckedRadioButtonId());
                     String ansText="";
                     ansText = uans.getText().toString();
@@ -179,13 +179,13 @@ public class Game extends AppCompatActivity {
                         editor.putString("level2", elfogadva);
                         editor.apply();
                         editor.commit();
-                        Toast.makeText(Game.this, "Level unlocked", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Game2.this, "Level unlocked", Toast.LENGTH_SHORT).show();
 
                         startActivity(towin);
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                     }
                 }else{
-                    Toast.makeText(Game.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Game2.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
                 }
             }
         });

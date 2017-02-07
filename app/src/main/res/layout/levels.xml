@@ -5,30 +5,17 @@
     >
 
     <TextView
-        android:text="WELCOME"
+        android:text="Choose your level"
         android:textStyle="bold"
-        android:textColor="#eaf1ec"
+        android:textColor="#c90606"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="50dp"
+        android:textSize="45dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="125dp"
         android:id="@+id/welcome" />
 
-
-
-
-
-    <TextView
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/welcome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:id="@+id/name2" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -42,47 +29,47 @@
         android:id="@+id/linearLayout">
 
         <Button
-            android:text="@string/newgame"
+            android:text="Level 1"
             android:textColor="#f8f7f7"
             android:textSize="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button1"
+            android:id="@+id/level1"
             android:background="@drawable/mybutton"
             />
 
         <Button
-            android:text="@string/options"
-            android:textColor="#ec2626"
+            android:text="Level 2"
+            android:textColor="#a30c0c"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/button_option"
+            android:id="@+id/level2"
             android:textSize="30dp"
             android:layout_marginTop="21dp"
             android:background="@drawable/mybutton"
+
             />
 
         <Button
-            android:text="@string/credits"
-            android:textColor="#f8f7f7"
+            android:text="Level 3"
+            android:textColor="#a30c0c"
             android:layout_width="match_parent"
             android:textSize="30dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button4"
+            android:id="@+id/level3"
             android:background="@drawable/mybutton"
             android:layout_marginTop="21dp"
             />
 
         <Button
-            android:text="@string/share"
-            android:textColor="#f8f7f7"
+            android:text="Level 4"
+            android:textColor="#a30c0c"
             android:layout_width="match_parent"
             android:textSize="30dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button5"
+            android:id="@+id/level4"
             android:background="@drawable/mybutton"
             android:layout_marginTop="21dp"
-
             />
 
 
@@ -91,23 +78,9 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/fb"
-        android:id="@+id/fb"
-        android:layout_marginBottom="21dp"
+        android:background="@drawable/home"
+        android:id="@+id/imageView"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/welcome"
-        android:layout_alignStart="@+id/welcome"
-        android:clickable="true"
-        />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/erasmus"
-        android:id="@+id/erasmus"
-        android:clickable="true"
-        android:layout_alignTop="@+id/fb"
-        android:layout_alignRight="@+id/welcome"
-        android:layout_alignEnd="@+id/welcome" />
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 </RelativeLayout>
