@@ -27,7 +27,6 @@ public class Game extends AppCompatActivity {
     private Boolean exit = false;
     private TextView tv;
     private TextView question;
-    private TextView topic;
     private Button btnNext;
     private Button btnExit;
     private RadioGroup rg;

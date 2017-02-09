@@ -176,7 +176,7 @@ public class Game2 extends AppCompatActivity {
                     {
                         SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor=sharedPreferences.edit();
-                        editor.putString("level2", elfogadva);
+                        editor.putString("level3", elfogadva);
                         editor.apply();
                         editor.commit();
                         Toast.makeText(Game2.this, "Level unlocked", Toast.LENGTH_SHORT).show();

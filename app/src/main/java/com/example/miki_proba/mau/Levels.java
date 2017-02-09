@@ -50,6 +50,18 @@ public class Levels extends AppCompatActivity {
             button2.setTextColor(declined);
         }
 
+        if (level3.length()>0){
+            button3.setTextColor(accepted);
+        }else{
+            button3.setTextColor(declined);
+        }
+
+        if (level4.length()>0){
+            button4.setTextColor(accepted);
+        }else{
+            button4.setTextColor(declined);
+        }
+
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override

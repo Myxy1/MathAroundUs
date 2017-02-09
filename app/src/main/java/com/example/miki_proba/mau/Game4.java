@@ -61,10 +61,10 @@ public class Game4 extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         elfogadva = "accepted";
 
-        //questions = getResources().getStringArray(R.array.level2_q);
+        questions = getResources().getStringArray(R.array.level2_q);
 
-       // ans = getResources().getStringArray(R.array.level2_a);
-        //opt = getResources().getStringArray(R.array.level2_o);
+        ans = getResources().getStringArray(R.array.level2_a);
+        opt = getResources().getStringArray(R.array.level2_o);
 
         tv = (TextView)findViewById(R.id.textView1);
         question = (TextView)findViewById(R.id.textView3);
@@ -173,12 +173,7 @@ public class Game4 extends AppCompatActivity {
                     }
                     else
                     {
-                        SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor=sharedPreferences.edit();
-                        editor.putString("level2", elfogadva);
-                        editor.apply();
-                        editor.commit();
-                        Toast.makeText(Game4.this, "Level unlocked", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Game4.this, "You win this game", Toast.LENGTH_SHORT).show();
 
                         startActivity(towin);
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);

@@ -1,21 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/hatter3"
+android:layout_width="match_parent" android:layout_height="match_parent"
+android:background="@drawable/hatter3"
     >
+
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
         />
 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="bottom"
+
+    android:layout_marginBottom="150dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/linearLayout">
+
+    <Button
+        android:text="Reset"
+        android:textColor="#f8f7f7"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="21dp"
+        />
+
+    <Button
+        android:text="Level 2 Hack"
+        android:textColor="#f8f7f7"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hacked1"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="21dp"
+        />
+
+    <Button
+        android:text="Level 3 Hack"
+        android:textColor="#f8f7f7"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hacked2"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="21dp"
+        />
+
+    <Button
+        android:text="Level 4 Hack"
+        android:textColor="#f8f7f7"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hacked3"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="21dp"
+        />
+
+</LinearLayout>
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/home"
-        android:layout_marginTop="126dp"
         android:id="@+id/image_back"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -59,10 +59,10 @@ public class Game3 extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         elfogadva = "accepted";
 
-        //questions = getResources().getStringArray(R.array.level2_q);
+        questions = getResources().getStringArray(R.array.level2_q);
 
-        //ans = getResources().getStringArray(R.array.level2_a);
-       // opt = getResources().getStringArray(R.array.level2_o);
+        ans = getResources().getStringArray(R.array.level2_a);
+        opt = getResources().getStringArray(R.array.level2_o);
 
         tv = (TextView)findViewById(R.id.textView1);
         question = (TextView)findViewById(R.id.textView3);
@@ -173,7 +173,7 @@ public class Game3 extends AppCompatActivity {
                     {
                         SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
                         SharedPreferences.Editor editor=sharedPreferences.edit();
-                        editor.putString("level2", elfogadva);
+                        editor.putString("level4", elfogadva);
                         editor.apply();
                         editor.commit();
                         Toast.makeText(Game3.this, "Level unlocked", Toast.LENGTH_SHORT).show();
@@ -199,35 +199,27 @@ public class Game3 extends AppCompatActivity {
         switch (kategoriak)
         {
             case 0 :
-                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.denmark_happy);
                 break;
             case 1 :
-                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.greece_happy);
                 break;
             case 2 :
-                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.hungary_happy);
                 break;
             case 3 :
-                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.italy_happy);
                 break;
             case 4 :
-                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.lithuania_happy_);
                 break;
             case 5 :
-                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.polonia_happy);
                 break;
             case 6 :
-                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.portugal_happy);
                 break;
             case 7 :
-                topic.setText(topics[kategoriak]);
                 kategoria.setBackgroundResource(R.drawable.romania_happy);
                 break;
         }
