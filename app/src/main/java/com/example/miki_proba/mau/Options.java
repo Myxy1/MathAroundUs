@@ -13,8 +13,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -25,10 +27,12 @@ public class Options extends AppCompatActivity {
     private ArrayAdapter<String> adapter;       //Ország nevét lehet beállítani.
     private List<String> list;                  //Lista az országok nevének.
     private ImageView back;                     //Vissza a főmenübe gomb.
-    private Spinner spinner;                    //Spinner = legördülő menü.
+    //private Spinner spinner;                    //Spinner = legördülő menü.
     private Boolean exit = false;               //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
     private Button hack1,hack2,hack3,reset;
     private String elfogadva;
+    private EditText nev, pw1, pw2, pw3;        //Név és jelszók
+    private String name; //Globális változó név
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +41,29 @@ public class Options extends AppCompatActivity {
 
         elfogadva = "accepted";
 
-        spinner = (Spinner) findViewById(R.id.spinner);
+        //spinner = (Spinner) findViewById(R.id.spinner);
+
+        pw1 = (EditText) findViewById(R.id.hacked1_e);
+        pw2 = (EditText) findViewById(R.id.hacked2_e);
+        pw3 = (EditText) findViewById(R.id.hacked3_e);
+
+        SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+        name = sharedPreferences.getString("name","");
+
+        nev = (EditText) findViewById(R.id.optionname);
+        nev.setText(name);
+
         back = (ImageView) findViewById(R.id.image_back);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor=sharedPreferences.edit();
+                editor.putString("name", nev.getText().toString());
+                editor.commit();
+
                 Intent tothird = new Intent(Options.this, ThirdActivity.class);
                 startActivity(tothird);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
@@ -53,13 +74,18 @@ public class Options extends AppCompatActivity {
         hack1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor=sharedPreferences.edit();
-                editor.putString("level2", elfogadva);
-                editor.apply();
-                editor.commit();
-                Toast.makeText(Options.this, "Your level 2 was  unlocked", Toast.LENGTH_SHORT).show();
+                if (pw1.getText().toString().equals(getString(R.string.password)))
+                {
+                    SharedPreferences sharedPreferences = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("level2", elfogadva);
+                    editor.apply();
+                    editor.commit();
+                    Toast.makeText(Options.this, "Your level 2 was  unlocked", Toast.LENGTH_SHORT).show();
+                }else
+                {
+                   Toast.makeText(Options.this, "Your code was wrong!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -67,13 +93,18 @@ public class Options extends AppCompatActivity {
         hack2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor=sharedPreferences.edit();
-                editor.putString("level3", elfogadva);
-                editor.apply();
-                editor.commit();
-                Toast.makeText(Options.this, "Your level 3 was unlocked", Toast.LENGTH_SHORT).show();
+                if (pw2.getText().toString().equals(getString(R.string.password)))
+                {
+                    SharedPreferences sharedPreferences = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("level3", elfogadva);
+                    editor.apply();
+                    editor.commit();
+                    Toast.makeText(Options.this, "Your level 3 was unlocked", Toast.LENGTH_SHORT).show();
+                }else
+                {
+                    Toast.makeText(Options.this, "Your code was wrong!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -81,13 +112,18 @@ public class Options extends AppCompatActivity {
         hack3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor=sharedPreferences.edit();
-                editor.putString("level4", elfogadva);
-                editor.apply();
-                editor.commit();
-                Toast.makeText(Options.this, "Your level 4 wsa unlocked", Toast.LENGTH_SHORT).show();
+                if (pw3.getText().toString().equals(getString(R.string.password)))
+                {
+                    SharedPreferences sharedPreferences = getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("level4", elfogadva);
+                    editor.apply();
+                    editor.commit();
+                    Toast.makeText(Options.this, "Your level 4 was unlocked", Toast.LENGTH_SHORT).show();
+                }else
+                {
+                    Toast.makeText(Options.this, "Your code was wrong!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -96,17 +132,17 @@ public class Options extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                SharedPreferences mySPrefs = PreferenceManager.getDefaultSharedPreferences(Options.this);
-                SharedPreferences.Editor editor = mySPrefs.edit();
-                editor.remove("level2");
-                editor.remove("level3");
-                editor.remove("level4");
-                editor.apply();
+                SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor=sharedPreferences.edit();
+                editor.clear();
                 editor.commit();
+
+
+
                 Toast.makeText(Options.this, "Your game was restored", Toast.LENGTH_SHORT).show();
             }
         });
-
+/*
         list = new ArrayList<String>();
         list.add("Languages");
         list.add("Hungary");
@@ -158,7 +194,7 @@ public class Options extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
             }
         });
-
+*/
 
         Log.d("LOG_Options","Create");
     }

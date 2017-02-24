@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
@@ -21,13 +22,19 @@ public class SecondActivity extends AppCompatActivity {
     private Button button1;     //Tovább gomb
     private Boolean exit = false;   //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
     private MediaPlayer mp1,mp2;    //Két hang fájl, egyik azt csinálja hogyha nem add meg nevet akkor sípól, ha meg sikerült és beír valamit akkor utána át teszi a következő activityre és kiadja a hangot.
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
 
+
+        SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+        name = sharedPreferences.getString("name","");
         name1 = (EditText) findViewById(R.id.name1);
+        name1.setText(name);
+
         button1 = (Button) findViewById(R.id.button1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

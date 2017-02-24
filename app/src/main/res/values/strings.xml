@@ -535,6 +535,7 @@
     <string name="credits">Credits</string>
     <string name="options">Options</string>
     <string name="share">Share Us</string>
+    <string name="password">matharoundus</string>
 
     <string-array name="items">
         <item>Item 1</item>

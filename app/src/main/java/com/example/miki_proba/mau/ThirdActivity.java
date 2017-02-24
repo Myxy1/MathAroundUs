@@ -76,7 +76,7 @@ public class ThirdActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myIntent = new Intent(Intent.ACTION_SEND);
                 myIntent.setType("text/plain");
-                String shareBody = "This game is awesome!!! You need to download this game:";
+                String shareBody = "This game is awesome!!! You need to download this game!!! Website:http://www.matharoundus.nhely.hu/ GooglePlay:";
                 String shareSub = "Your Subject here";
                 myIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
                 myIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
@@ -97,7 +97,7 @@ public class ThirdActivity extends AppCompatActivity {
         img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse("https://twinspace.etwinning.net/9782/home");
+                Uri uri = Uri.parse("http://www.matharoundus.nhely.hu/");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             }

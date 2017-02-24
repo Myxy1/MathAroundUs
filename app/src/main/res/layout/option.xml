@@ -3,76 +3,165 @@
 android:layout_width="match_parent" android:layout_height="match_parent"
 android:background="@drawable/hatter3"
     >
-
+    <!--
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinner"
         />
+    -->
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:gravity="bottom"
-
-    android:layout_marginBottom="150dp"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:id="@+id/linearLayout">
-
-    <Button
-        android:text="Reset"
+    <TextView
+        android:text="You can change your name or
+reset your game"
         android:textColor="#f8f7f7"
         android:textSize="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/reset"
-        android:background="@drawable/mybutton"
+        android:id="@+id/edit_text"
         android:layout_marginTop="21dp"
         />
-
-    <Button
-        android:text="Level 2 Hack"
-        android:textColor="#f8f7f7"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/hacked1"
-        android:background="@drawable/mybutton"
-        android:layout_marginTop="21dp"
-        />
-
-    <Button
-        android:text="Level 3 Hack"
-        android:textColor="#f8f7f7"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/hacked2"
-        android:background="@drawable/mybutton"
-        android:layout_marginTop="21dp"
-        />
-
-    <Button
-        android:text="Level 4 Hack"
-        android:textColor="#f8f7f7"
-        android:textSize="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/hacked3"
-        android:background="@drawable/mybutton"
-        android:layout_marginTop="21dp"
-        />
-
-</LinearLayout>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/home"
         android:id="@+id/image_back"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/edit_text"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:textColor="#ec0505"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/optionname"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="21dp"
+            android:maxLength="15"
+            />
+
+        <Button
+            android:text="Reset the hole game"
+            android:textColor="#f8f7f7"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset"
+            android:background="@drawable/mybutton"
+            android:layout_marginTop="21dp"
+            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+
+                android:id="@+id/level2"
+                android:layout_below="@+id/edit_text"
+                android:layout_centerHorizontal="true">
+
+                <EditText
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#f90404"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hacked1_e"
+                    android:background="@drawable/edit_text"
+                    android:layout_marginTop="23dp"
+                    android:maxLength="12"
+                    />
+                <Button
+                    android:text="Level 2 Unlock"
+                    android:textColor="#f8f7f7"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hacked1"
+                    android:background="@drawable/mybutton"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+
+                android:id="@+id/level3"
+                android:layout_below="@+id/edit_text"
+                android:layout_centerHorizontal="true">
+
+                <EditText
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#f90404"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hacked2_e"
+                    android:background="@drawable/edit_text"
+                    android:layout_marginTop="23dp"
+                    android:maxLength="12"
+                    />
+                <Button
+                    android:text="Level 3 Unlock"
+                    android:textColor="#f8f7f7"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hacked2"
+                    android:background="@drawable/mybutton"
+                    android:layout_marginTop="10dp"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="top"
+
+                android:id="@+id/level4"
+                android:layout_below="@+id/edit_text"
+                android:layout_centerHorizontal="true">
+                <EditText
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#f90404"
+                    android:textSize="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hacked3_e"
+                    android:background="@drawable/edit_text"
+                    android:layout_marginTop="23dp"
+                    android:maxLength="12"
+                    />
+                <Button
+                    android:text="Level 4 Unlock"
+                    android:textColor="#f8f7f7"
+                    android:textSize="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hacked3"
+                    android:background="@drawable/mybutton"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
