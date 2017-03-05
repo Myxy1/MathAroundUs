@@ -6,4 +6,8 @@
     <string name="credits">Kredyty</string>
     <string name="options">Opcje</string>
     <string name="share">Podziel się z nami</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="Restart">Restart gry</string>
+    <string name="do_you_want_to_restart">Czy chcesz, aby ponownie uruchomić grę?</string>
 </resources>

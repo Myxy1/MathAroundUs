@@ -6,4 +6,8 @@
     <string name="options">Opțiuni</string>
     <string name="newgame">Joc nou</string>
     <string name="share">ne împărtășiți</string>
+    <string name="yes">Da</string>
+    <string name="no">Nu</string>
+    <string name="Restart">Reporniți joc</string>
+    <string name="do_you_want_to_restart">Doriți să reporniți jocul?</string>
 </resources>

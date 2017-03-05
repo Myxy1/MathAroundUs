@@ -6,4 +6,8 @@
     <string name="credits">Συντελεστές</string>
     <string name="continuee">Να συνεχίσει</string>
     <string name="share">μοιραστείτε μαζί μας</string>
+    <string name="yes">Ναί</string>
+    <string name="no">Οχι</string>
+    <string name="Restart">Επανεκκίνηση του παιχνιδιού</string>
+    <string name="do_you_want_to_restart">Θέλετε να επανεκκινήσετε το παιχνίδι σας;</string>
 </resources>

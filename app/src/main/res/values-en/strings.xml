@@ -6,4 +6,8 @@
     <string name="newgame">New Game</string>
     <string name="options">Options</string>
     <string name="share">Share us</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="Restart">Game Restart</string>
+    <string name="do_you_want_to_restart">Do you want to restart your game?</string>
 </resources>

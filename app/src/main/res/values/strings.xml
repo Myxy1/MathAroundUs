@@ -536,6 +536,10 @@
     <string name="options">Options</string>
     <string name="share">Share Us</string>
     <string name="password">matharoundus</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="Restart">Game Restart</string>
+    <string name="do_you_want_to_restart">Do you want to restart your game?</string>
 
     <string-array name="items">
         <item>Item 1</item>

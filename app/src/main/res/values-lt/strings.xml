@@ -6,4 +6,8 @@
     <string name="newgame">Naujas žaidimas</string>
     <string name="options">Nustatymai</string>
     <string name="share">Dalytis mus</string>
+    <string name="yes">Taip</string>
+    <string name="no">Ne</string>
+    <string name="Restart">Žaidimo Paleisti iš naujo</string>
+    <string name="do_you_want_to_restart">Ar norite iš naujo paleisti žaidimą?</string>
 </resources>

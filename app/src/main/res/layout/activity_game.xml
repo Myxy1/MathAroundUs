@@ -8,12 +8,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.miki_proba.mau.Game"
+    tools:context="com.example.miki_proba.mau.Level01"
     android:background="@drawable/hatter3">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout">
+        android:id="@+id/relativeLayout"
+        >
 
         <ImageView
             android:layout_width="wrap_content"
@@ -97,6 +98,37 @@
         android:text="X"
         android:textSize="50px"
         android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:background="@drawable/play"
+        android:id="@+id/play"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:background="@drawable/pause"
+        android:id="@+id/pause"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/play"
+        android:layout_toEndOf="@+id/play"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:background="@drawable/stop"
+        android:id="@+id/stop"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/pause"
+        android:layout_toEndOf="@+id/pause"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
 
     <TextView
         android:layout_width="wrap_content"

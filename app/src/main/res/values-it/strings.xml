@@ -6,4 +6,8 @@
     <string name="newgame">Nuova Partita</string>
     <string name="options">Opzioni</string>
     <string name="share">siamo Condividi</string>
+    <string name="yes">Sì</string>
+    <string name="no">No</string>
+    <string name="Restart">Restart Gioco</string>
+    <string name="do_you_want_to_restart">Vui riavviare il gioco?</string>
 </resources>

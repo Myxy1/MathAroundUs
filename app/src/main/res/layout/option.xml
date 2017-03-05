@@ -12,8 +12,8 @@ android:background="@drawable/hatter3"
     -->
 
     <TextView
-        android:text="You can change your name or
-reset your game"
+        android:text="You can change your name"
+        android:textAlignment="center"
         android:textColor="#f8f7f7"
         android:textSize="30dp"
         android:layout_width="match_parent"
@@ -51,17 +51,6 @@ reset your game"
             android:background="@drawable/edit_text"
             android:layout_marginTop="21dp"
             android:maxLength="15"
-            />
-
-        <Button
-            android:text="Reset the hole game"
-            android:textColor="#f8f7f7"
-            android:textSize="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/reset"
-            android:background="@drawable/mybutton"
-            android:layout_marginTop="21dp"
             />
             <LinearLayout
                 android:layout_width="wrap_content"
