@@ -1,13 +1,14 @@
-package com.example.miki_proba.mau;
+package com.MAU.erasmus.mau;
 
-
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
-import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -17,15 +18,16 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+
 import java.util.Random;
 
-public class Level04 extends AppCompatActivity {
+public class Level01 extends AppCompatActivity {
 
 
     private Boolean exit = false;
     private TextView tv;
     private TextView question;
-    private TextView topic;
     private Button btnNext;
     private Button btnExit;
     private Button play,pause,stop;
@@ -64,8 +66,8 @@ public class Level04 extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         elfogadva = "accepted";
 
-        mp = MediaPlayer.create(Level04.this,R.raw.level4);
-        mp.start();
+            mp = MediaPlayer.create(Level01.this,R.raw.level1);
+            mp.start();
 
         play = (Button) findViewById(R.id.play);
         play.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +75,7 @@ public class Level04 extends AppCompatActivity {
             public void onClick(View view) {
                 if (mp == null)
                 {
-                    mp = MediaPlayer.create(Level04.this,R.raw.level1);
+                    mp = MediaPlayer.create(Level01.this,R.raw.level1);
                     mp.start();
                 }else if (!mp.isPlaying()){
                     mp.seekTo(paused);
@@ -100,10 +102,10 @@ public class Level04 extends AppCompatActivity {
             }
         });
 
-        questions = getResources().getStringArray(R.array.level2_q);
+        questions = getResources().getStringArray(R.array.level1_q);
 
-        ans = getResources().getStringArray(R.array.level2_a);
-        opt = getResources().getStringArray(R.array.level2_o);
+        ans = getResources().getStringArray(R.array.level1_a);
+        opt = getResources().getStringArray(R.array.level1_o);
 
         tv = (TextView)findViewById(R.id.textView1);
         question = (TextView)findViewById(R.id.textView3);
@@ -134,12 +136,12 @@ public class Level04 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                AlertDialog.Builder alert1 = new AlertDialog.Builder(Level04.this, R.style.AppCompatAlertDialogStyle);
+                AlertDialog.Builder alert1 = new AlertDialog.Builder(Level01.this, R.style.AppCompatAlertDialogStyle);
                 alert1.setMessage("Do you want to leave game?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener(){
                             @Override
                             public void onClick(DialogInterface dialog, int which){
-                                Intent tomenu = new Intent(Level04.this,Menu_Activity.class);
+                                Intent tomenu = new Intent(Level01.this,Menu_Activity.class);
                                 startActivity(tomenu);
                                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                                 mp.stop();
@@ -160,9 +162,9 @@ public class Level04 extends AppCompatActivity {
                 if (rb1.isChecked()==true || rb2.isChecked()==true || rb3.isChecked()==true || rb4.isChecked()==true)
                 {
                     topic();
-                    Intent towin = new Intent(Level04.this,Win_Activity.class);
+                    Intent towin = new Intent(Level01.this,Win_Activity.class);
 
-                    Intent tolose = new Intent(Level04.this,Lose_Activity.class);
+                    Intent tolose = new Intent(Level01.this,Lose_Activity.class);
                     RadioButton uans =(RadioButton)findViewById(rg.getCheckedRadioButtonId());
                     String ansText="";
                     ansText = uans.getText().toString();
@@ -214,14 +216,19 @@ public class Level04 extends AppCompatActivity {
                     }
                     else
                     {
-                        Toast.makeText(Level04.this, "You win this game", Toast.LENGTH_SHORT).show();
+                        SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor=sharedPreferences.edit();
+                        editor.putString("level2", elfogadva);
+                        editor.apply();
+                        editor.commit();
+                        Toast.makeText(Level01.this, "Level unlocked", Toast.LENGTH_SHORT).show();
+                        mp.stop();
 
                         startActivity(towin);
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-                        mp.stop();
                     }
                 }else{
-                    Toast.makeText(Level04.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Level01.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -229,6 +236,7 @@ public class Level04 extends AppCompatActivity {
         Log.d("LOG_game","Start");
 
     }
+
 
     public int topic()
     {
@@ -308,6 +316,7 @@ public class Level04 extends AppCompatActivity {
         super.onResume();
         Log.d("LOG_game","Resume");
         mp.start();
+
     }
 
     @Override

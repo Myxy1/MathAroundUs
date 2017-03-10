@@ -1,4 +1,4 @@
-package com.example.miki_proba.mau;
+package com.MAU.erasmus.mau;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

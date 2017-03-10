@@ -1,14 +1,13 @@
-package com.example.miki_proba.mau;
+package com.MAU.erasmus.mau;
 
-import android.content.Context;
+
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -18,11 +17,9 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
 import java.util.Random;
 
-public class Level02 extends AppCompatActivity {
+public class Level04 extends AppCompatActivity {
 
 
     private Boolean exit = false;
@@ -60,13 +57,14 @@ public class Level02 extends AppCompatActivity {
 
     private MediaPlayer mp;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         elfogadva = "accepted";
 
-        mp = MediaPlayer.create(Level02.this,R.raw.level2);
+        mp = MediaPlayer.create(Level04.this,R.raw.level4);
         mp.start();
 
         play = (Button) findViewById(R.id.play);
@@ -75,7 +73,7 @@ public class Level02 extends AppCompatActivity {
             public void onClick(View view) {
                 if (mp == null)
                 {
-                    mp = MediaPlayer.create(Level02.this,R.raw.level1);
+                    mp = MediaPlayer.create(Level04.this,R.raw.level1);
                     mp.start();
                 }else if (!mp.isPlaying()){
                     mp.seekTo(paused);
@@ -136,12 +134,12 @@ public class Level02 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                AlertDialog.Builder alert1 = new AlertDialog.Builder(Level02.this, R.style.AppCompatAlertDialogStyle);
+                AlertDialog.Builder alert1 = new AlertDialog.Builder(Level04.this, R.style.AppCompatAlertDialogStyle);
                 alert1.setMessage("Do you want to leave game?")
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener(){
                             @Override
                             public void onClick(DialogInterface dialog, int which){
-                                Intent tomenu = new Intent(Level02.this,Menu_Activity.class);
+                                Intent tomenu = new Intent(Level04.this,Menu_Activity.class);
                                 startActivity(tomenu);
                                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                                 mp.stop();
@@ -162,9 +160,9 @@ public class Level02 extends AppCompatActivity {
                 if (rb1.isChecked()==true || rb2.isChecked()==true || rb3.isChecked()==true || rb4.isChecked()==true)
                 {
                     topic();
-                    Intent towin = new Intent(Level02.this,Win_Activity.class);
+                    Intent towin = new Intent(Level04.this,Win_Activity.class);
 
-                    Intent tolose = new Intent(Level02.this,Lose_Activity.class);
+                    Intent tolose = new Intent(Level04.this,Lose_Activity.class);
                     RadioButton uans =(RadioButton)findViewById(rg.getCheckedRadioButtonId());
                     String ansText="";
                     ansText = uans.getText().toString();
@@ -216,19 +214,14 @@ public class Level02 extends AppCompatActivity {
                     }
                     else
                     {
-                        SharedPreferences sharedPreferences=getSharedPreferences("MyData", Context.MODE_PRIVATE);
-                        SharedPreferences.Editor editor=sharedPreferences.edit();
-                        editor.putString("level3", elfogadva);
-                        editor.apply();
-                        editor.commit();
-                        Toast.makeText(Level02.this, "Level unlocked", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Level04.this, "You win this game", Toast.LENGTH_SHORT).show();
 
-                        mp.stop();
                         startActivity(towin);
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+                        mp.stop();
                     }
                 }else{
-                    Toast.makeText(Level02.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Level04.this, "Please check answer(s)", Toast.LENGTH_SHORT).show();
                 }
             }
         });

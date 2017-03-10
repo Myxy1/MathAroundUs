@@ -13,7 +13,7 @@
         <item>It is known that 21% of the amount of milk is cream and 25% of the amount of cream is butter. Find out the amount of milk we need to obtain 52,5 kg butter?</item>
         <item>The following sequence is given:  1, 1, 2, 3, 5, 8, 13, 21. Determine the next 3 numbers in the sequence.</item>
         <item>Which of the following sequences is a Fibonacci sequence?</item>
-        <item>How many solutions are there for a quadratic equation is the discriminant is negative?</item>
+        <item>How many solutions are there for a quadratic equation if the discriminant is negative?</item>
         <item>Electrical power is measured in:</item>
         <item>The frequency is measured in?</item>
         <item>How long does it take for the Earth to orbit around itself?</item>
@@ -126,8 +126,8 @@
     ////////////////////////
 
     <string-array name="level2_q" formatted="false">
-        <item>What is the molarity (% w/V) of a solution obtained by dissolving 1.92 g of NaOH in 100 mL of water solution?</item>
-        <item>How many mL of a 0.48 M NaOH solution are needed to neutralize 100 mL of a 0.12 M HCl solution?</item>
+        <item>What is the molarity (% w/V) of a solution obtained by dissolving 1.92 g of NaOH in 100 ml of water solution?</item>
+        <item>How many ml of a 0.48 M NaOH solution are needed to neutralize 100 ml of a 0.12 M HCl solution?</item>
         <item>If you have picture with a length of  2100 pixels and you print it on a Laserjet printer (300 DPI), how wide will the picture become on paper?</item>
         <item>What is another word for “centre of mass”?</item>
         <item>The golden ratio divides a line in two parts of unequal size. If the larger part is called a and the smaller part b, which of the following equations is true?</item>
@@ -160,7 +160,7 @@
     <string-array name="level2_o" formatted="false">
         <item>0,48 M</item><item>0,60 M</item><item>1 M</item><item>0,77 M</item>
 
-        <item>10 mL</item><item>60 mL</item><item>25 mL</item><item>35 mL</item>
+        <item>10 ml</item><item>60 ml</item><item>25 ml</item><item>35 ml</item>
 
         <item>7 inches</item><item>0,14 inches</item><item>14 inches</item><item>0,7 inches</item>
 
@@ -215,7 +215,7 @@
 
     <string-array name="level2_a" formatted="false">
         <item>0,48 M</item>
-        <item>25 mL</item>
+        <item>25 ml</item>
         <item>7 inches</item>
         <item>The center of gravity</item>
         <item>ab=a+ba</item>
@@ -266,7 +266,7 @@
         <item>What is the line segment of Golden Ratio?</item>
         <item>Why does the candle swing while it burns?</item>
         <item>The circumference of the Vatican dome is 153,86 m. Calculate its radius.</item>
-        <item>What is the molarity of a 37% (w/w) HCl solution whose density is 1.186 g/mL?</item>
+        <item>What is the molarity of a 37% (w/w) HCl solution whose density is 1.186 g/ml?</item>
         <item>What kind of mathematics examines renewable energy recourse models?</item>
         <item>Sonata is made of 100 beats, is divided into two parts: 38 in the first  and 62  the second . Which number is close to this ratio?</item>
         <item>Which of the following is the numerical equivalent of  one quintillion?</item>
@@ -383,7 +383,7 @@
         <item>These numbers show the opinion on drinking water quality of the countries in the MAU project. Hungary: 79.46, Portugal: 87.02, Denmark: 77.27, Poland: 64.9, Lithuania: 95.83, Italy: 65.54, Romania: 55.6, Greece: 77.41. What is the average of these numbers?</item>
         <item>"Me You And math Together Let is have a fun day And explore the world around us!" This is a Fibonacci poem. Why?</item>
         <item>A rod with the length of 1 meter has on its ends two bodies on the right, one with a mass of 10kg and on the left side a mass of 20kg. The centre of the mass of this system can be found:</item>
-        <item>In a gasoline sample, 20 mL, was extracted 1,5 mL of Ethanol. The Ethanol percentage in the sample is:</item>
+        <item>In a gasoline sample, 20 ml, was extracted 1,5 ml of Ethanol. The Ethanol percentage in the sample is:</item>
         <item>Evolution of the importance of renewable electrical energy in Portugal between 1999 and 2012.Between 1999 and 2012, the increase of renewable electrical energy was:</item>
         <item>Which is the decimal number which responds to the binary one (10101010)</item>
         <item>The autumnal equinox we find using the formula:</item>
@@ -481,33 +481,33 @@
         <item>40.23</item>
     </string-array>
 
-    <string name="school1">\nBorupgaard Gymnasium
+    <string name="school1" translatable="false">\nBorupgaard Gymnasium
         <a href="www.borupgaard-gym.dk" target="_top">www.borupgaard-gym.dk</a>\n
     </string>
-    <string name="school2">\nΓΕΝΙΚΟ ΛΥΚΕΙΟ ΑΓΡΙΑΣ
+    <string name="school2" translatable="false">\nΓΕΝΙΚΟ ΛΥΚΕΙΟ ΑΓΡΙΑΣ
         <a href="www.lykeioagrias.blogspot.hu" target="_top">www.lykeioagrias.blogspot.hu</a>\n
     </string>
-    <string name="school3">\nPetrik Lajos Két Tanítási Nyelvű Vegyipari, Környezetvédelmi és Informatikai Szakgimnázium
+    <string name="school3" translatable="false">\nPetrik Lajos Két Tanítási Nyelvű Vegyipari, Környezetvédelmi és Informatikai Szakgimnázium
         <a href="www.petrik.hu" target="_top">www.petrik.hu</a>\n
     </string>
-    <string name="school4">\nScuole Liceo Scientifico Statale B. Rosetti
+    <string name="school4" translatable="false">\nScuole Liceo Scientifico Statale B. Rosetti
         <a href="www.liceorosetti.gov.it" target="_top">www.liceorosetti.gov.it</a>\n
     </string>
-    <string name="school5">\nUtenos Dauniškio gimnazija
+    <string name="school5" translatable="false">\nUtenos Dauniškio gimnazija
         <a href="www.dauniskis.utena.lm.lt" target="_top">www.dauniskis.utena.lm.lt</a>\n
     </string>
-    <string name="school6">\nZespół Szkół w Głogowie Małopolskim
+    <string name="school6" translatable="false">\nZespół Szkół w Głogowie Małopolskim
         <a href="www.zs.glogow-mlp.pl" target="_top">www.zs.glogow-mlp.pl</a>\n
     </string>
-    <string name="school7">\nAgrupamento de Escolas Anselmo de Andrade
+    <string name="school7" translatable="false">\nAgrupamento de Escolas Anselmo de Andrade
         <a href="www.anselmodeandrade.pt" target="_top">www.anselmodeandrade.pt</a>\n
     </string>
-    <string name="school8">\nColegiul Tehnic Ana Aslan
+    <string name="school8" translatable="false">\nColegiul Tehnic Ana Aslan
         <a href="www.colegiulaslancluj.ro" target="_top">www.colegiulaslancluj.ro</a>\n
     </string>
 
 
-    <string name="developers">
+    <string name="developers" translatable="false">
         \nMobile developer:\n
                 Merényi Miklós\n
         \nWebsite developer:\n
@@ -515,17 +515,17 @@
     </string>
 
 
-    <string name="inventor">
-        \nInventor:\n
+    <string name="inventor" translatable="false">
+        \nDesigner:\n
             Miguel Rodrigues\n
     </string>
 
-    <string name="idea">
+    <string name="idea" translatable="false">
         \nOriginal idea:\n
             Andreea Suciu\n
     </string>
 
-    <string name="school">
+    <string name="school" translatable="false">
         \nThe App questions are a joint work of the teachers and students of the following Partner Schools:\n
     </string>
 
@@ -535,7 +535,7 @@
     <string name="credits">Credits</string>
     <string name="options">Options</string>
     <string name="share">Share Us</string>
-    <string name="password">matharoundus</string>
+    <string name="password" translatable="false">matharoundus</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
     <string name="Restart">Game Restart</string>
@@ -548,6 +548,10 @@
         <item>Item 4</item>
         <item>Item 5</item>
     </string-array>
+    <string name="items" translatable="false">items</string>
+    <string name="level1_o" translatable="false">level</string>
+    <string name="level1_a" translatable="false">level</string>
+    <string name="level1_q" translatable="false">level</string>
 
 
 </resources>

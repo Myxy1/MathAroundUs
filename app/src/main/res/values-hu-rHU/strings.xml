@@ -9,4 +9,5 @@
     <string name="no">Nem</string>
     <string name="Restart">Új Játék</string>
     <string name="do_you_want_to_restart">Biztos szeretné újraindítani a játékot?</string>
+    <string name="app_name">MAU</string>
 </resources>

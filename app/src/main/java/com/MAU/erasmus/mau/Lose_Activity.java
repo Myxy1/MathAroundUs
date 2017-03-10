@@ -1,4 +1,4 @@
-package com.example.miki_proba.mau;
+package com.MAU.erasmus.mau;
 
 
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Win_Activity extends AppCompatActivity {
+public class Lose_Activity extends AppCompatActivity {
 
     private Boolean exit = false;   //Ez a változó azért kell, mert a vissaz gombbal a programot bzárjuk, ha ez az érték true lesz!
     private ImageView imageView;    //A vissza gomb amivel vissza lehet menni a főmenübe.
@@ -18,16 +18,15 @@ public class Win_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.win);
+        setContentView(R.layout.lose);
         Log.d("LOG_lose","Start");
-
 
         imageView = (ImageView) findViewById(R.id.imageView);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent tothird = new Intent(Win_Activity.this, Menu_Activity.class);
+                Intent tothird = new Intent(Lose_Activity.this, Menu_Activity.class);
                 startActivity(tothird);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }

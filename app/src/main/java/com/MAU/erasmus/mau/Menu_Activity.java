@@ -1,4 +1,4 @@
-package com.example.miki_proba.mau;
+package com.MAU.erasmus.mau;
 
 
 import android.app.Dialog;
@@ -12,7 +12,6 @@ import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;

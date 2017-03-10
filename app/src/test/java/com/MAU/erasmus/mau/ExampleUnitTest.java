@@ -1,4 +1,4 @@
-package com.example.miki_proba.mau;
+package com.MAU.erasmus.mau;
 
 import org.junit.Test;
 
