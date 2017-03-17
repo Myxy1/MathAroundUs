@@ -114,7 +114,7 @@ public class Menu_Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myIntent = new Intent(Intent.ACTION_SEND);
                 myIntent.setType("text/plain");
-                String shareBody = "This game is awesome!!! You need to download this game!!! Website:http://www.matharoundus.nhely.hu/ GooglePlay:";
+                String shareBody = "This game is awesome!!! You need to download this game!!! Website:http://www.matharoundus.nhely.hu/ GooglePlay:https://play.google.com/store/apps/details?id=com.MAU.erasmus.mau";
                 String shareSub = "Your Subject here";
                 myIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
                 myIntent.putExtra(Intent.EXTRA_TEXT,shareBody);

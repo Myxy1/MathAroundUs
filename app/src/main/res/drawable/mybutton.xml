@@ -18,6 +18,9 @@
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <corners android:radius="1000dp" />
+            <text
+                android:color="#ec2626"
+                />
             <solid android:color="#42a5d3" />
             <stroke
                 android:width="2dip"

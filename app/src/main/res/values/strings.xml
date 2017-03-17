@@ -31,6 +31,9 @@
         <item>You know that the monthly growth of an idealized rabbit population follows the Fibonacci sequence (1, 1, 2, 3, 5, etc.). If you buy 8 rabbits, how many will they be after 8 months?</item>
         <item>In which number system are colors coded in a computer?</item>
         <item>Which colors does the RGB system use?</item>
+        <item>What is the rate of population growth in RPA in 2014, if 1161159 children were born and 453360 people died. The number of inhabitants was 54002000.</item>
+        <item>Syria is located:</item>
+        <item>Which of the digital system was zero?</item>
     </string-array>
 
     /////////////////////////
@@ -87,6 +90,12 @@
         <item>hexadecimal </item><item>decimal</item><item>numeral</item><item>3-base</item>
 
         <item>red,green,brown</item><item>red,gray,blue</item><item>green,red,blue</item><item>blue,red,yellow</item>
+
+        <item>24000</item><item>13,1%</item><item>17%</item><item>131</item>
+
+        <item>West and North</item><item>East and North</item><item>West and South</item><item>East and South</item>
+
+        <item>Hindy</item><item>Latin</item><item>Hebrew</item><item>Greek</item>
     </string-array>
 
     /////////////////////////
@@ -107,7 +116,7 @@
         <item>24 hours</item>
         <item>The screen resolution</item>
         <item>a 2 Byte number</item>
-        <item>Pythagoreans</item>
+        <item>Pythagoras</item>
         <item>slope</item>
         <item>8</item>
         <item>72° and 36°</item>
@@ -119,6 +128,9 @@
         <item>987</item>
         <item>hexadecimal</item>
         <item>green,red,blue</item>
+        <item>13,1%</item>
+        <item>East and North</item>
+        <item>Hindy</item>
     </string-array>
 
     /////////////////////////
@@ -128,7 +140,7 @@
     <string-array name="level2_q" formatted="false">
         <item>What is the molarity (% w/V) of a solution obtained by dissolving 1.92 g of NaOH in 100 ml of water solution?</item>
         <item>How many ml of a 0.48 M NaOH solution are needed to neutralize 100 ml of a 0.12 M HCl solution?</item>
-        <item>If you have picture with a length of  2100 pixels and you print it on a Laserjet printer (300 DPI), how wide will the picture become on paper?</item>
+        <item>If you have picture with a length of  2100 pixels and you print it on a laser jet printer (300 DPI), how wide will the picture become on paper?</item>
         <item>What is another word for “centre of mass”?</item>
         <item>The golden ratio divides a line in two parts of unequal size. If the larger part is called a and the smaller part b, which of the following equations is true?</item>
         <item>Only one of the following lists is organised in rising order(from the lowest to the highest) for the water used in their production :</item>
@@ -151,6 +163,9 @@
         <item>Why are hundredths of a second up to 99 while seconds are up to 59?</item>
         <item>Minutes and seconds are considered on the base of:</item>
         <item>Annual distribution of the number of events and the burnt area in Portugal between 2003 and 2013. The year which recorded the major number of events was:</item>
+        <item>The longitude difference between A place and B place is 240. What is the solar time difference between them?</item>
+        <item>In a map with scale 1:1.000.000 we measure a 50cm distance The real distance is:</item>
+        <item>Which of the analysis of statistical techniques not used:</item>
     </string-array>
 
     /////////////////////////
@@ -207,6 +222,12 @@
         <item>50</item><item>100</item><item>10</item><item>60</item>
 
         <item>2013</item><item>2003</item><item>2005</item><item>2009</item>
+
+        <item>890 minutes</item><item>16 hours</item><item>21 hours</item><item>14 hours 24 minutes</item>
+
+        <item>50 km</item><item>5000 km</item><item>500 km</item><item>50.000 km</item>
+
+        <item>Trend surface analysis</item><item>Cluster analysis</item><item>Factor analysis</item><item>Surveying small areas</item>
     </string-array>
 
     /////////////////////////
@@ -239,6 +260,9 @@
         <item>Because they have different bases of numbers</item>
         <item>60</item>
         <item>2005</item>
+        <item>16 hours</item>
+        <item>500 km</item>
+        <item>Surveying small areas</item>
     </string-array>
 
     /////////////////////////
@@ -254,7 +278,7 @@
         <item>What does "Ctrl+s" do?</item>
         <item>The hexadecimal representation of the octal number 420 is:</item>
         <item>Which of the following is a Pythagorean triple?</item>
-        <item>The length of the shadow of the St. Michael is Church tower (in the citycentre  of Cluj-Napoca) is 80m, in a day when the Sun is 45 degree over the horizon. How high is the tower of this church?</item>
+        <item>The length of the shadow of the St. Michael is Church tower (in the city center  of Cluj-Napoca) is 80m, in a day when the Sun is 45 degree over the horizon. How high is the tower of this church?</item>
         <item>How many solutions are there for a quadratic equation if the discriminant is 0?</item>
         <item>The greenhouse effect is related to:</item>
         <item>A longer wavelength makes  _______  tone:</item>
@@ -262,7 +286,7 @@
         <item>Without the greenhouse effect the temperature of earth would be around :</item>
         <item>If a painting has perspective then</item>
         <item>Which one of the following shapes cannot not be used for plane tessellation</item>
-        <item>In order to keep accurate records, archeologists have to measure and mark areas in the shape of</item>
+        <item>In order to keep accurate records, archaeologists have to measure and mark areas in the shape of</item>
         <item>What is the line segment of Golden Ratio?</item>
         <item>Why does the candle swing while it burns?</item>
         <item>The circumference of the Vatican dome is 153,86 m. Calculate its radius.</item>
@@ -271,6 +295,9 @@
         <item>Sonata is made of 100 beats, is divided into two parts: 38 in the first  and 62  the second . Which number is close to this ratio?</item>
         <item>Which of the following is the numerical equivalent of  one quintillion?</item>
         <item>The “giga“ is :</item>
+        <item>The map range between two places is 7 cm. In reality the distance is equal to 210 km. What is the map scale?</item>
+        <item>In archaeology, math is used in the process of :</item>
+        <item>How much higher is the temperature in London (+5 degree C) than the temperature in Vilnius (-10 degree C)?</item>
     </string-array>
 
     /////////////////////////
@@ -327,6 +354,12 @@
         <item>1,000,000,000,000,000</item><item>1,000,000,000,000,000,000</item><item>1,000,000,000,000,000,000,000</item><item>1,000,000,000,000,000,000,000,000</item>
 
         <item>1,000,000</item><item>1,000</item><item>10,000</item><item>1000000000</item>
+
+        <item>1 cm to 3 km</item><item>1 : 300</item><item>1cm to 30m</item><item>1 : 3000000</item>
+
+        <item>Carbon dating</item><item>Excavating</item><item>Reading lost languages</item><item>All answer are correct</item>
+
+        <item>5 degree C</item><item>-5 degree C</item><item>15 degree C</item><item>10 degree C</item>
     </string-array>
 
     /////////////////////////
@@ -359,6 +392,9 @@
         <item>0,618</item>
         <item>1,000,000,000,000,000,000</item>
         <item>1000000000</item>
+        <item>1 : 3000000</item>
+        <item>All answer are correct</item>
+        <item>15 degree C</item>
     </string-array>
 
     /////////////////////////
@@ -391,6 +427,9 @@
         <item>If you are multiplying powers with the same base:</item>
         <item>These numbers show the opinion on drinking water quality of the countries in the MAU project. Hungary: 79.46, Portugal: 87.02, Denmark: 77.27, Poland: 64.9, Lithuania: 95.83, Italy: 65.54, Romania: 55.6, Greece: 77.41. What is the median of these numbers?</item>
         <item>These numbers show the opinion on drinking water quality of the countries in the MAU project. Hungary: 79.46, Portugal: 87.02, Denmark: 77.27, Poland: 64.9, Lithuania: 95.83, Italy: 65.54, Romania: 55.6, Greece: 77.41. What is the range of these numbers?</item>
+        <item>Which of the followings places is closer to the equator?</item>
+        <item>What kind of math do archaeologists use when recording where they excavate?</item>
+        <item>An iceberg with a height of 50 meters above the water line. Only 1/5 of the iceberg is visible above the water line. What is the total height, in meters, of the iceberg?</item>
     </string-array>
 
     /////////////////////////
@@ -447,6 +486,12 @@
         <item>77.30</item><item>77.33</item><item>77.34</item><item>77.38</item>
 
         <item>39.78</item><item>151.43</item><item>75.72</item><item>40.23</item>
+
+        <item>24 degree W, 40 degree N</item><item>140 degree W, 20 degree S</item><item>60 degree E, 40 degree S</item><item>120 degree E, 30 degree S</item>
+
+        <item>Trigonometry</item><item>Measurements</item><item>Geometry</item><item>All answer are correct</item>
+
+        <item>150 m</item><item>250 m</item><item>1 km</item><item>200 m</item>
     </string-array>
 
     /////////////////////////
@@ -479,6 +524,9 @@
         <item>10 • 10 • 10 = 10 • 10 • 10</item>
         <item>77.34</item>
         <item>40.23</item>
+        <item>140 degree W, 20 degree S</item>
+        <item>All answer are correct</item>
+        <item>250 m</item>
     </string-array>
 
     <string name="school1" translatable="false">\nBorupgaard Gymnasium

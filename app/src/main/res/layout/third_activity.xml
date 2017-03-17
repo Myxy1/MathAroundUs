@@ -64,7 +64,7 @@
 
         <Button
             android:text="@string/options"
-            android:textColor="#ec2626"
+            android:textColor="#f8f7f7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button_option"
